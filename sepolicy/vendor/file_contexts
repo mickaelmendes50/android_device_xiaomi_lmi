@@ -7,6 +7,9 @@
 # Charger
 /vendor/bin/batterysecret                                   u:object_r:batterysecret_exec:s0
 
+# Data files
+/data/per_boot(/.*)?                                        u:object_r:per_boot_file:s0
+
 # Devices
 /dev/xlog                                                   u:object_r:sound_device:s0
 /dev/ir_spi                                                 u:object_r:vendor_ir_spi_device:s0
