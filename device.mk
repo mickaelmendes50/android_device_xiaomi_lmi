@@ -76,3 +76,6 @@ PRODUCT_PACKAGES += \
     update_engine \
     update_engine_sideload \
     update_verifier
+
+# Vendor
+$(call inherit-product, vendor/xiaomi/lmi/lmi-vendor.mk)
