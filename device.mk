@@ -256,6 +256,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    AOSPALmiFrameworks \
     LmiFrameworks \
     LmiSystemUI \
     FrameworksResTarget \
