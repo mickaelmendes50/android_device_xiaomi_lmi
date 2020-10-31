@@ -58,8 +58,10 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
+    FrameworksResTarget \
     LmiFrameworks \
-    LmiSystemUI
+    LmiSystemUI \
+    WifiResTarget
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
