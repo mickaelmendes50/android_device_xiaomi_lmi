@@ -43,6 +43,26 @@ PRODUCT_PACKAGES += \
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
+# Platform
+TARGET_BOARD_PLATFORM := kona
+
+# QTI
+TARGET_COMMON_QTI_COMPONENTS += \
+    audio \
+    av \
+    bt \
+    display \
+    gps \
+    init \
+    media-legacy \
+    overlay \
+    perf \
+    telephony \
+    usb \
+    vibrator \
+    wfd \
+    wlan
+
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
