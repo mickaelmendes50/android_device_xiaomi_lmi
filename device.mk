@@ -138,9 +138,25 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
 
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.qti.dcvs.sh \
+    init.target.rc
+
 # Keymaster
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.strongbox_keystore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.strongbox_keystore.xml
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.crypto.volume.filenames_mode="aes-256-cts" \
+    ro.crypto.allow_encrypt_override=true
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.crypto.dm_default_key.options_format.version=2 \
+    ro.crypto.volume.metadata.method=dm-default-key
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.keystore_desede=true
 
 # Lights
 PRODUCT_PACKAGES += \
