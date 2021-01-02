@@ -78,9 +78,17 @@ BOARD_KERNEL_CMDLINE := \
 
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 BOARD_KERNEL_BASE := 0x00000000
+BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
+NEED_KERNEL_MODULE_SYSTEM := true
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_ARCH := arm64
+ifeq ($(TARGET_USES_PREBUILT_KERNEL), true)
+-include device/xiaomi/lmi-kernel/BoardConfigKernel.mk
+else
+TARGET_KERNEL_CONFIG := vendor/lmi_defconfig
+TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
+endif
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
