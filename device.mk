@@ -26,6 +26,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
 PRODUCT_SOONG_NAMESPACES += \
     device/xiaomi/lmi
 
+# Overlays
+PRODUCT_PACKAGES += \
+    LmiFrameworks \
+    LmiSystemUI
+
 # Platform
 TARGET_BOARD_PLATFORM := kona
 
