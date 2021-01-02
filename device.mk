@@ -40,6 +40,11 @@ PRODUCT_PACKAGES += \
     Tag \
     SecureElement
 
+# Overlays
+PRODUCT_PACKAGES += \
+    LmiFrameworks \
+    LmiSystemUI
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
