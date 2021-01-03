@@ -61,33 +61,34 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 TARGET_SCREEN_DENSITY := 420
 
 # Kernel
-BOARD_KERNEL_CMDLINE := \
-    androidboot.console=ttyMSM0 \
-    androidboot.hardware=qcom \
-    androidboot.memcg=1 \
-    androidboot.usbcontroller=a600000.dwc3 \
-    cgroup.memory=nokmem,nosocket \
-    earlycon=msm_geni_serial,0x4a90000 \
-    loop.max_part=7 \
-    lpm_levels.sleep_disabled=1 \
-    msm_rtb.filter=0x237 \
-    reboot=panic_warm \
-    service_locator.enable=1 \
-    swiotlb=2048 \
-    video=vfb:640x400,bpp=32,memsize=3072000
-
+BOARD_KERNEL_CMDLINE := console=ttyMSM0,115200n8 androidboot.hardware=qcom androidboot.console=ttyMSM0 androidboot.memcg=1 lpm_levels.sleep_disabled=1 video=vfb:640x400,bpp=32,memsize=3072000 msm_rtb.filter=0x237 service_locator.enable=1 androidboot.usbcontroller=a600000.dwc3 swiotlb=2048 loop.max_part=7 cgroup.memory=nokmem,nosocket reboot=panic_warm
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
-BOARD_KERNEL_BASE := 0x00000000
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+TARGET_KERNEL_ARCH := arm64
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_KERNEL_PAGESIZE := 4096
+BOARD_BOOT_HEADER_VERSION := 2
+BOARD_KERNEL_BASE          := 0x00000000
+BOARD_KERNEL_TAGS_OFFSET   := 0x00000100
+BOARD_KERNEL_OFFSET        := 0x00008000
+BOARD_KERNEL_SECOND_OFFSET := 0x00f00000
+BOARD_RAMDISK_OFFSET       := 0x01000000
 NEED_KERNEL_MODULE_SYSTEM := true
-TARGET_KERNEL_HEADER_ARCH := arm64
-TARGET_KERNEL_ARCH := arm64
-ifeq ($(TARGET_USES_PREBUILT_KERNEL), true)
--include device/xiaomi/lmi-kernel/BoardConfigKernel.mk
-else
-TARGET_KERNEL_CONFIG := vendor/lmi_defconfig
-TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
+BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
+BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --base $(BOARD_KERNEL_BASE)
+BOARD_MKBOOTIMG_ARGS += --kernel_offset $(BOARD_KERNEL_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --second_offset $(BOARD_KERNEL_SECOND_OFFSET)
+BOARD_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE) --board ""
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_PREBUILT_DTBIMAGE_DIR := $(DEVICE_PATH)/prebuilt
+ifeq ($(TARGET_PREBUILT_KERNEL),)
+  TARGET_KERNEL_CONFIG := lmi_user_defconfig
+  TARGET_KERNEL_CLANG_COMPILE := true
+  TARGET_KERNEL_SOURCE := kernel/xiaomi/lmi
 endif
 
 # Metadata
