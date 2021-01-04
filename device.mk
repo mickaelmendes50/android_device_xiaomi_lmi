@@ -70,6 +70,10 @@ PRODUCT_PACKAGES += \
     libqservice \
     libtinyxml
 
+# DPM
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.dpmhalservice.enable=1
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey
@@ -155,6 +159,16 @@ TARGET_COMMON_QTI_COMPONENTS += \
 # Recovery
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.recovery.ui.margin_height=150
+
+# RIL
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.multisim.config=dsds \
+    persist.vendor.radio.apm_sim_not_pwdn=1 \
+    persist.vendor.radio.custom_ecc=1 \
+    persist.vendor.radio.enableadvancedscan=true \
+    persist.vendor.radio.procedure_bytes=SKIP \
+    persist.vendor.radio.rat_on=combine \
+    persist.vendor.radio.sib16_support=1
 
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
