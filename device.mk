@@ -235,6 +235,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# Thermal
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0-service.qti
+
 # Update Engine
 PRODUCT_PACKAGES += \
     update_engine \
