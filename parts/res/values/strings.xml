@@ -14,7 +14,16 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<resources>
+<resources>    
+    <!-- Device specific settings -->
+    <string name="device_settings_app_name">PopupSettings</string>
+
+    <!-- DO NOT TRANSLATE Empty summary for dynamic preferences -->
+    <string name="summary_empty" translatable="false"></string>
+
+    <!-- Action toggles -->
+    <string name="action_none">Disable</string>
+
     <!-- Popup camera settings -->
     <string name="popup_led_title">Visual effect</string>
     <string name="popup_led_summary">Show animation when the front camera appears and retracts</string>
