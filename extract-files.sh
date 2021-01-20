@@ -1,19 +1,11 @@
+  
 #!/bin/bash
-
-# Copyright (C) 2020 The LineageOS Project
-#               2020 Paranoid Android
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
+# Copyright (C) 2016 The CyanogenMod Project
+# Copyright (C) 2017-2020 The LineageOS Project
 #
-#      http://www.apache.org/licenses/LICENSE-2.0
+# SPDX-License-Identifier: Apache-2.0
 #
-# Unless required by applicable law or agreed to in writing, software
-# distributed under the License is distributed on an "AS IS" BASIS,
-# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-# See the License for the specific language governing permissions and
-# limitations under the License.
 
 set -e
 
@@ -24,9 +16,9 @@ VENDOR=xiaomi
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
-ROOT="${MY_DIR}"/../../..
+ANDROID_ROOT="${MY_DIR}/../../.."
 
-HELPER="${ROOT}/vendor/pa/build/tools/extract_utils.sh"
+HELPER="${ANDROID_ROOT}/tools/extract-utils/extract_utils.sh"
 if [ ! -f "${HELPER}" ]; then
     echo "Unable to find helper script at ${HELPER}"
     exit 1
@@ -36,11 +28,14 @@ source "${HELPER}"
 # Default to sanitizing the vendor folder before extraction.
 CLEAN_VENDOR=true
 
+KANG=
+SECTION=
+
 while [ "${#}" -gt 0 ]; do
     case "${1}" in
         -n | --no-cleanup )
-            CLEAN_VENDOR=false
-            ;;
+                CLEAN_VENDOR=false
+                ;;
         -k | --kang )
                 KANG="--kang"
                 ;;
@@ -59,10 +54,17 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
-# Initialize the helper.
-setup_vendor "${DEVICE}" "${VENDOR}" "${ROOT}" false "${CLEAN_VENDOR}"
+function blob_fixup() {
+    case "${1}" in
+        vendor/lib64/libgf_ud_hal.so|vendor/lib64/libgf_g6_ud_hal.so)
+            sed -i "s|vendor.boot.verifiedbootstate|vendor.boot.fingerprintbstate|g" "${2}"
+            ;;
+    esac
+}
 
-extract "${MY_DIR}/proprietary-files.txt" "${SRC}" \
-        "${KANG}" --section "${SECTION}"
+# Initialize the helper.
+setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
+
+extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 
 "${MY_DIR}/setup-makefiles.sh"
