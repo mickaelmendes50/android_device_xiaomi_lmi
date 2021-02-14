@@ -16,7 +16,12 @@
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
     device/xiaomi/lmi/sepolicy/public/macros \
     device/xiaomi/lmi/sepolicy/public/motor \
+    device/xiaomi/lmi/sepolicy/public/popupcamera \
     device/xiaomi/lmi/sepolicy/public/touchfeature
+
+# Private Sepolicy
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
+    device/xiaomi/lmi/sepolicy/private/popupcamera
 
 # QCOM Sepolicy
 BOARD_SEPOLICY_DIRS += \

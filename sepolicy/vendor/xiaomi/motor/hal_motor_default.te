@@ -8,6 +8,9 @@ binder_call(hal_motor_client, hal_motor_server)
 hal_client_domain(cameraserver, hal_motor)
 hal_server_domain(hal_motor_default, hal_motor)
 
+binder_call(popupcamera_app, hal_motor)
+binder_call(hal_motor_default, popupcamera_app)
+
 hal_attribute_hwservice(hal_motor, hal_motor_hwservice)
 
 # Allow hal_motor_default to read and write to { motor_device hall_device }
