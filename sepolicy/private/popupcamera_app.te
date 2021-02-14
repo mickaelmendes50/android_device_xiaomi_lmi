@@ -1,0 +1,31 @@
+app_domain(popupcamera_app)
+
+# Allow popupcamera_app to find *_service
+allow popupcamera_app {
+  app_api_service
+  audioserver_service
+  cameraserver_service
+  drmserver_service
+  mediaextractor_service
+  mediametrics_service
+  mediaserver_service
+}:service_manager find;
+
+hal_client_domain(popupcamera_app, hal_motor)
+
+# Allow popupcamera_app read and write /data/data subdirectory
+allow popupcamera_app system_app_data_file:dir create_dir_perms;
+allow popupcamera_app system_app_data_file:{ file lnk_file } create_file_perms;
+
+# Allow binder communication with gpuservice
+binder_call(popupcamera_app, gpuservice)
+binder_call(popupcamera_app, hal_motor)
+
+# Allow popupcamera_app to read and write to cgroup/sysfs_leds/sysfs_thermal
+allow popupcamera_app sysfs_leds:dir search;
+#allow popupcamera_app vendor_sysfs_graphics:dir search;
+allow popupcamera_app {
+  cgroup
+  sysfs_leds
+  sysfs_thermal
+}:{ file lnk_file } rw_file_perms;

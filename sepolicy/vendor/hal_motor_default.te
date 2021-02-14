@@ -8,8 +8,8 @@ binder_call(hal_motor_client, hal_motor_server)
 hal_client_domain(cameraserver, hal_motor)
 hal_server_domain(hal_motor_default, hal_motor)
 
-binder_call(devicesettings_app, hal_motor)
-binder_call(hal_motor_default, devicesettings_app)
+binder_call(popupcamera_app, hal_motor)
+binder_call(hal_motor_default, popupcamera_app)
 
 hal_attribute_hwservice(hal_motor, hal_motor_hwservice)
 
