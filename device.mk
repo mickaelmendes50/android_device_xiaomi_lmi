@@ -203,6 +203,15 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.incremental.enable=1
 
+# Init
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
+
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    init.qti.dcvs.sh \
+    init.target.rc
+
 # Keymaster
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.crypto.allow_encrypt_override=true \
