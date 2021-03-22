@@ -759,6 +759,12 @@ vendor/lib/rfsa/adsp/libfastcvdsp_skel.so
 vendor/lib64/libfastcvdsp_stub.so
 -vendor/lib64/libfastcvopt.so
 
+# Fingerprint - MIUI 12.2.4
+vendor/lib64/hw/fingerprint.goodix_fod6.so|428cdf83e38ea59b8995a3c56500dddfb1d61558
+vendor/lib64/hw/fingerprint.goodix_fod.so|f2b974a1df64328b858c55ec144dbcd03683aebd
+vendor/lib64/libgf_hal6.so|70f81507be47366761ea64b4b578e78d5c31e8fa
+vendor/lib64/libgf_hal.so|42e2eae94390007c42321e228f0327a814c3695d
+
 # GPS
 vendor/bin/garden_app
 vendor/bin/loc_launcher
