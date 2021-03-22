@@ -59,9 +59,13 @@ TARGET_SCREEN_DENSITY := 420
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
+    $(DEVICE_PATH)/vintf/xiaomi_vendor_framework_compatibility_matrix.xml \
     vendor/qcom/opensource/core-utils/vendor_framework_compatibility_matrix.xml
 
-DEVICE_MANIFEST_FILE := $(DEVICE_PATH)/vintf/manifest.xml
+DEVICE_MANIFEST_FILE := \
+    $(DEVICE_PATH)/vintf/manifest.xml \
+    $(DEVICE_PATH)/vintf/xiaomi_manifest.xml
+
 DEVICE_MATRIX_FILE := device/qcom/common/compatibility_matrix.xml
 
 # Kernel

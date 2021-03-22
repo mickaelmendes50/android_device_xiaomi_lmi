@@ -1,0 +1,140 @@
+<!-- Copyright (C) 2020 Paranoid Android
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<compatibility-matrix version="1.0" type="framework">
+    <!-- Display -->
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.displayfeature</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IDisplayFeature</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IDisplayFeature/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.touchfeature</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ITouchFeature</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::ITouchFeature/default</fqname>
+    </hal>
+
+    <!-- Fingerprint -->
+    <hal format="hidl">
+        <name>vendor.goodix.hardware.biometrics.fingerprint</name>
+        <transport>hwbinder</transport>
+        <version>2.1</version>
+        <interface>
+            <name>IGoodixFingerprintDaemon</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.fingerprintextension</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IXiaomiFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+
+    <!-- Infrared -->
+    <hal format="hidl">
+        <name>android.hardware.ir</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IConsumerIr</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+
+    <!-- Motor -->
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.motor</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IMotor</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IMotor/default</fqname>
+    </hal>
+
+    <!-- Secure element -->
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.mfidoca</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IFidoService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.mlipay</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>IMlipayService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.mtdservice</name>
+        <transport>hwbinder</transport>
+        <version>1.2</version>
+        <interface>
+            <name>IMTService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.batterylife</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IBatteryLife</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::IBatteryLife/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.citsensorservice</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>ICitSensorService</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.1::ICitSensorService/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.xiaomi.hardware.citvendorservice</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ICitVendorService</name>
+            <instance>default</instance>
+        </interface>
+        <fqname>@1.0::ICitVendorService/default</fqname>
+    </hal>
+</compatibility-matrix>
