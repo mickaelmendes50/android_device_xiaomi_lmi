@@ -29,6 +29,28 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.vulkan=adreno \
     ro.opengles.version=196610
 
+# Audio
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.midi.xml
+
+PRODUCT_PACKAGES += \
+    liba2dpoffload \
+    libbatterylistener \
+    libcirrusspkrprot \
+    libcomprcapture \
+    libexthwplugin \
+    libhdmiedid \
+    libhfp \
+    libqcompostprocbundle \
+    libqcomvisualizer \
+    libqcomvoiceprocessing \
+    libsndmonitor \
+    libspkrprot \
+    libvolumelistener
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.config.vc_call_vol_steps=7
+
 # Boot
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.1-impl-qti.recovery \
