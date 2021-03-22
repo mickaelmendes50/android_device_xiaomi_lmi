@@ -70,6 +70,10 @@ PRODUCT_PACKAGES += \
     libqservice \
     libtinyxml
 
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm@1.3-service.clearkey
+
 # Fastboot
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.0-impl-mock \
