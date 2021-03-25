@@ -170,7 +170,8 @@ PRODUCT_PACKAGES += \
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    device/xiaomi/lmi
+    device/xiaomi/lmi \
+    hardware/xiaomi
 
 # Net
 PRODUCT_PACKAGES += \
