@@ -14,6 +14,8 @@
 
 DEVICE_PATH := device/xiaomi/lmi
 
+BUILD_BROKEN_DUP_RULES := true
+
 # AVB
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --set_hashtree_disabled_flag
