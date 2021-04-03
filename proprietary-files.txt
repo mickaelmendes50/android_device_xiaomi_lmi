@@ -354,8 +354,10 @@ vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
 vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
 
 # Display (HWC)
+vendor/bin/hw/vendor.qti.hardware.display.composer-service
 vendor/lib64/libsdmcore.so
 vendor/lib64/libsdmutils.so
+vendor/lib64/vendor.qti.hardware.display.composer@3.0.so
 
 # Display (SDM)
 vendor/lib64/libsdedrm.so
