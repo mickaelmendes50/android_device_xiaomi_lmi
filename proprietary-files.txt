@@ -617,25 +617,13 @@ vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so
 
-# Display - MIUI 12.2.4
-vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
-vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
-vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
-vendor/lib64/hw/displayfeature.default.so
-vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
-
 # Display (HDR) - MIUI 12.2.4
 vendor/lib64/libhdr_tm.so
-
-# Display (HWC) - MIUI 12.2.4
-vendor/lib64/libsdmcore.so
-vendor/lib64/libsdmutils.so
 
 # Display (SDM) - MIUI 12.2.4
 vendor/lib64/libdisplayqos.so
 vendor/lib64/libdisplayskuutils.so
 vendor/lib64/libqseed3.so
-vendor/lib64/libsdedrm.so
 vendor/lib64/libsdm-color.so
 vendor/lib64/libsdm-colormgr-algo.so
 vendor/lib64/libsdm-diag.so
