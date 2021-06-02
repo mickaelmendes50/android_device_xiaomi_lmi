@@ -19,6 +19,10 @@ TARGET_SCREEN_WIDTH := 1080
 
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# Camera
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.motor@1.0.vendor
+
 # Inherit from sm8250-common
 $(call inherit-product, device/xiaomi/sm8250-common/kona.mk)
 
