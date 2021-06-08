@@ -346,6 +346,20 @@ vendor/etc/init/init.batterysecret.rc
 # Display
 vendor/etc/qdcm_calib_data_xiaomi_j11_38_08_0a_fhd_panel.xml
 
+# Display feature
+vendor/bin/hw/vendor.xiaomi.hardware.displayfeature@1.0-service
+vendor/etc/init/vendor.xiaomi.hardware.displayfeature@1.0-service.rc
+vendor/lib64/hw/displayfeature.default.so
+vendor/lib64/hw/vendor.xiaomi.hardware.displayfeature@1.0-impl.so
+vendor/lib64/vendor.xiaomi.hardware.displayfeature@1.0.so
+
+# Display (HWC)
+vendor/lib64/libsdmcore.so
+vendor/lib64/libsdmutils.so
+
+# Display (SDM)
+vendor/lib64/libsdedrm.so
+
 # Fingerprint
 vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so
 vendor/lib64/hw/fingerprint.goodix_fod6.so:vendor/lib64/hw/fingerprint.goodix_fod6.default.so
