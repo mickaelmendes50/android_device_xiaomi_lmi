@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Adreno
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.kona.api30
+
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
@@ -26,6 +30,47 @@ PRODUCT_PACKAGES += \
 # Attestation
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
+
+# Audio
+PRODUCT_PROPERTY_OVERRIDES += \
+    aaudio.mmap_policy=1 \
+    persist.audio.button_jack.profile=volume \
+    persist.audio.button_jack.switch=0 \
+    persist.vendor.audio.hifi=false \
+    persist.vendor.audio.ring.filter.mask=0 \
+    persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptiver2-aac-ldac-lhdc \
+    ro.config.vc_call_vol_steps=11 \
+    ro.vendor.audio.afe.record=true \
+    ro.vendor.audio.aiasst.support=true \
+    ro.vendor.audio.dump.mixer=true \
+    ro.vendor.audio.game.effect=true \
+    ro.vendor.audio.hifi=true \
+    ro.vendor.audio.miui.karaoke.show=false \
+    ro.vendor.audio.multiroute=true \
+    ro.vendor.audio.ring.filter=true \
+    ro.vendor.audio.scenario.support=true \
+    ro.vendor.audio.sdk.fluencetype=fluence \
+    ro.vendor.audio.sfx.audiovisual=true \
+    ro.vendor.audio.sfx.earadj=true \
+    ro.vendor.audio.sfx.scenario=true \
+    ro.vendor.audio.sos=true \
+    ro.vendor.audio.soundfx.type=mi \
+    ro.vendor.audio.soundfx.usb=true \
+    ro.vendor.audio.surround.support=true \
+    ro.vendor.audio.us.proximity=true \
+    ro.vendor.audio.vocal.support=true \
+    ro.vendor.audio.voice.change.support=true \
+    ro.vendor.audio.voice.change.youme.support=true \
+    ro.vendor.audio.voice.volume.boost=none \
+    vendor.audio.adm.buffering.ms=6 \
+    vendor.audio.feature.dynamic_ecns.enable=false \
+    vendor.audio.feature.spkr_prot.enable=false \
+    vendor.audio.hal.output.suspend.supported=false \
+    vendor.audio.mic.status=off \
+    vendor.audio.offload.track.enable=false \
+    vendor.audio.spkcal.copy.inhal=true \
+    vendor.audio.spkr_prot.tx.sampling_rate=48000 \
+    vendor.audio.usb.disable.sidetone=true
 
 # Bluetooth
 PRODUCT_PACKAGES += \
@@ -53,6 +98,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.qcom.bluetooth.soc=hastings
 
 # Camera
+PRODUCT_PROPERTY_OVERRIDES += \
+    camera.disable_zsl_mode=true
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml \
@@ -70,6 +118,13 @@ PRODUCT_PACKAGES += \
 # Charging
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.charger.enable_suspend=1
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.cp.fcc_main_ua=400000 \
+    persist.vendor.cp.taper_term_mv=7000 \
+    persist.vendor.cp.qc3p5_vfloat_offset_uv=110000 \
+    persist.vendor.pps.disallowed=1 \
+    persist.vendor.hvdcp_opti.disallowed=1
 
 # Config Store
 PRODUCT_PACKAGES += \
@@ -92,6 +147,14 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.vendor.use_data_netmgrd=true
 
 # Display
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.display.paneltype=2 \
+    ro.vendor.display.sensortype=2 \
+    vendor.display.enable_async_powermode=0 \
+    vendor.display.qdcm.mode_combine=1 \
+    vendor.display.use_layer_ext=0 \
+    vendor.display.use_smooth_motion=0
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/display/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
@@ -145,6 +208,24 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.crypto.allow_encrypt_override=true \
     ro.crypto.volume.filenames_mode="aes-256-cts" \
     ro.hardware.keystore_desede=true
+
+# Media (VPP)
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.media.video.frc=false \
+    debug.media.video.style=false \
+    debug.media.video.vpp=false \
+    debug.media.vpp.enable=false \
+    ro.vendor.media.video.frc.support=true \
+    ro.vendor.media.video.style.support=false \
+    ro.vendor.media.video.vpp.support=true \
+    vendor.media.vpp.aie.cade=100 \
+    vendor.media.vpp.aie.ltm=1 \
+    vendor.media.vpp.aie.ltmacebrih=0 \
+    vendor.media.vpp.aie.ltmacebril=20 \
+    vendor.media.vpp.aie.ltmacestr=37 \
+    vendor.media.vpp.aie.ltmsatgain=55 \
+    vendor.media.vpp.aie.ltmsatoff=55 \
+    vendor.media.vpp.debug.value.use=false
 
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
