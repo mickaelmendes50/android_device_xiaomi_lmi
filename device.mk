@@ -209,8 +209,11 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     fstab.qcom \
+    init.xiaomi.rc \
+    init.mi.usb.sh \
     init.qti.dcvs.sh \
-    init.target.rc
+    init.target.rc \
+    ueventd.xiaomi.rc
 
 # Keymaster
 PRODUCT_PROPERTY_OVERRIDES += \
