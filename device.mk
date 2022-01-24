@@ -196,7 +196,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.touchfeature@1.0.vendor
 
 # Firmware
-$(call inherit-product, device/xiaomi/lmi-firmware/Android.mk)
+$(call inherit-product, device/xiaomi/lmi-firmware/firmware.mk)
 
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
