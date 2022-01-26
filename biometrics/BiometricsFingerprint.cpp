@@ -175,6 +175,14 @@ Return<RequestStatus> BiometricsFingerprint::ErrorFilter(int32_t error) {
     }
 }
 
+Return<void> BiometricsFingerprint::onHideUdfpsOverlay() {
+    return Void();
+}
+
+Return<void> BiometricsFingerprint::onShowUdfpsOverlay() {
+    return Void();
+}
+
 // Translate from errors returned by traditional HAL (see fingerprint.h) to
 // HIDL-compliant FingerprintError.
 FingerprintError BiometricsFingerprint::VendorErrorFilter(int32_t error,
