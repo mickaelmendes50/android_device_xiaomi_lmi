@@ -43,6 +43,10 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.data.mode=concurrent \
     ro.vendor.use_data_netmgrd=true
 
+# Display
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/display/,$(TARGET_COPY_OUT_VENDOR)/etc)
+
 # DPM
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.dpmhalservice.enable=1
@@ -119,6 +123,9 @@ PRODUCT_COPY_FILES += \
 # Vendor Service Manager
 PRODUCT_PACKAGES += \
     vndservicemanager
+
+# Vendor
+$(call inherit-product, vendor/xiaomi/lmi/lmi-vendor.mk)
 
 # Verified Boot
 PRODUCT_COPY_FILES += \
