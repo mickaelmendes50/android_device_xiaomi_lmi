@@ -250,6 +250,7 @@ PRODUCT_SOONG_NAMESPACES += \
 # Overlays
 PRODUCT_PACKAGES += \
     LmiFrameworks \
+    LmiSystemUI \
     FrameworksResTarget \
     WifiResTarget
 
