@@ -53,4 +53,14 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <!-- Touchfeature -->
+    <hal format="hidl" optional="true">
+        <name>vendor.xiaomi.hardware.touchfeature</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ITouchFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
