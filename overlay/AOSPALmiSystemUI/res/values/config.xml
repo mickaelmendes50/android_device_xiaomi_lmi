@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-     Copyright (C) 2021 Paranoid Android
+     Copyright (C) 2022 Paranoid Android
 
      Licensed under the Apache License, Version 2.0 (the "License");
      you may not use this file except in compliance with the License.
@@ -14,15 +14,17 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds. -->
 <resources>
 
-    <!-- Default rounded corner curve (a Bezier). Must match (the curved path in) rounded.xml.
-         Note that while rounded.xml includes the entire path (including the horizontal and vertical
-         corner edges), this pulls out just the curve.
-     -->
-    <string name="config_rounded_mask" translatable="false">M122,0 C71.76,3.59 52.03,8.07 29.6,29.6 8.07,52.03 3.59,71.76 0,122</string>
+    <!-- Color of the UDFPS pressed view -->
+    <color name="config_udfpsColor">#ffffff</color>
 
-    <!-- The radius of the enrollment progress bar, in dp -->
-    <integer name="config_udfpsEnrollProgressBar" translatable="false">106</integer>
-    
+    <!-- HBM type of UDFPS overlay.
+            0 - GLOBAL HBM 
+            1 - LOCAL HBM
+    -->
+    <integer name="config_udfps_hbm_type">0</integer>
+
 </resources>
