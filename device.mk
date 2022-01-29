@@ -257,6 +257,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.media.vpp.aie.ltmsatoff=55 \
     vendor.media.vpp.debug.value.use=false
 
+# Motor
+PRODUCT_PACKAGES += \
+    vendor.xiaomi.hardware.motor@1.0.vendor
+
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.netflix.bsp_rev=Q8250-19134-1

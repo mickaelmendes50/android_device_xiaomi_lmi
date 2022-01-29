@@ -15,6 +15,7 @@
 # Public Sepolicy
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
     device/xiaomi/lmi/sepolicy/public/macros \
+    device/xiaomi/lmi/sepolicy/public/motor \
     device/xiaomi/lmi/sepolicy/public/touchfeature
 
 # QCOM Sepolicy
@@ -30,6 +31,7 @@ BOARD_SEPOLICY_DIRS += \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/fingerprint \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/ir \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/last_kmsg \
+    device/xiaomi/lmi/sepolicy/vendor/xiaomi/motor \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/power_supply \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/radio \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/thermald \
