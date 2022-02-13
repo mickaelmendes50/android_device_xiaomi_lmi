@@ -546,8 +546,8 @@ media/audio/ui/popup_muqin_up.ogg|047ae904c2932bc6112cd7ef4458f4cad1972181
 media/audio/ui/popup_yingyan_down.ogg|de1623b20f311322dc79a3d152ca30318e1ed0db
 media/audio/ui/popup_yingyan_up.ogg|0c3a716ba49dd682a6d58cca04eece0f81ca6834
 
-# Camera (postproc)
-vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so 
+# Camera (postproc) - from LA.UM.9.14.r1-18400.02-LAHAINA.QSSI12.0
+vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|afeca01f1fc2619ddf1aada01d42735ab9efa682 
 
 # CNE
 -vendor/app/CACertService/CACertService.apk 
