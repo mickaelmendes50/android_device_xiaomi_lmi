@@ -239,6 +239,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.crypto.volume.filenames_mode="aes-256-cts" \
     ro.hardware.keystore_desede=true
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.xiaomi
+
 # Media (VPP)
 PRODUCT_PROPERTY_OVERRIDES += \
     debug.media.video.frc=false \
