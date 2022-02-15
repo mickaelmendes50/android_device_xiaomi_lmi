@@ -234,6 +234,9 @@
         <item>255</item>
     </integer-array>
 
+    <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
+    <bool name="config_intrusiveNotificationLed">true</bool>
+
     <!-- The default intensity level for haptic feedback. See Settings.System.HAPTIC_FEEDBACK_INTENSITY
          for more details on the constant values and meanings. -->
     <integer name="config_defaultHapticFeedbackIntensity">3</integer>
