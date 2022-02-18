@@ -6,3 +6,4 @@ userdebug_or_eng(`
 dontaudit kernel self:qipcrtr_socket create;
 
 allow kernel per_boot_file:file r_file_perms;
+allow kernel self:capability kill;
