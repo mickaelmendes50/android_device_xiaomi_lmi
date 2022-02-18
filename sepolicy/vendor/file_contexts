@@ -4,6 +4,11 @@
 # Camera
 /mnt/vendor/persist/camera(/.*)?                            u:object_r:vendor_persist_camera_file:s0
 
+# Camera motor
+/dev/drv8846_dev                                                        u:object_r:motor_device:s0
+/dev/ti-drv8846                                                         u:object_r:motor_device:s0
+/vendor/bin/hw/vendor\.xiaomi\.hardware\.motor@1.0-service              u:object_r:hal_motor_default_exec:s0
+
 # Charger
 /vendor/bin/batterysecret                                   u:object_r:batterysecret_exec:s0
 
@@ -41,6 +46,10 @@
 
 # Hals
 /vendor/bin/hw/vendor\.xiaomi\.hardware\.touchfeature@1\.0-service       u:object_r:hal_touchfeature_default_exec:s0
+
+# LED
+/sys/devices/platform/soc/[a-z0-9]+.qcom,spmi/spmi-[0-1]/spmi0-0[0-9]/[a-z0-9]+.qcom,spmi:qcom,[a-z0-9]+@[0-9]:qcom,leds@d000/leds(/.*)?            u:object_r:sysfs_leds:s0
+/sys/devices/platform/soc/[a-z0-9]+.i2c/i2c-[0-9]/[0-9]-[0-9]+/leds(/.*)?                                                                           u:object_r:sysfs_leds:s0
 
 # Lights
 /vendor/bin/hw/android\.hardware\.light-service\.xiaomi                 u:object_r:hal_light_default_exec:s0
