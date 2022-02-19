@@ -239,7 +239,10 @@ PRODUCT_PACKAGES += \
 # Keymaster
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.crypto.allow_encrypt_override=true \
-    ro.crypto.volume.filenames_mode="aes-256-cts" \
+    ro.crypto.dm_default_key.options_format.version=2 \
+    ro.crypto.volume.filenames_mode=aes-256-cts \
+    ro.crypto.volume.metadata.method=dm-default-key \
+    ro.crypto.volume.options=::v2 \
     ro.hardware.keystore_desede=true
 
 # Lights
