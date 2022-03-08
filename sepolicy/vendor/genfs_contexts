@@ -1,9 +1,6 @@
 # Cirrus
 genfscon sysfs /devices/platform/soc/a8c000.i2c/i2c-2/2-005a/f0_value                  u:object_r:sysfs_f0_value:s0
 
-# DC Dimming
-genfscon sysfs /devices/platform/soc/ae00000.qcom,mdss_mdp/drm/card0/card0-DSI-1/dimlayer_exposure      u:object_r:vendor_sysfs_dc_dim:s0
-
 # Fingerprint
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/device_prepare                u:object_r:vendor_sysfs_fingerprint:s0
 genfscon sysfs /devices/platform/soc/soc:fingerprint_fpc/fingerdown_wait               u:object_r:vendor_sysfs_fingerprint:s0
