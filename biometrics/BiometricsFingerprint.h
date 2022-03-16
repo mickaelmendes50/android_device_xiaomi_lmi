@@ -71,8 +71,6 @@ public:
     Return<bool> isUdfps(uint32_t sensorId) override;
     Return<void> onFingerDown(uint32_t x, uint32_t y, float minor, float major) override;
     Return<void> onFingerUp() override;
-    Return<void> onShowUdfpsOverlay() override;
-    Return<void> onHideUdfpsOverlay() override;
 
     // Methods from ::vendor::xiaomi::hardware::fingerprintextension::V1_0::IXiaomiFingerprint follow.
     Return<int32_t> extCmd(int32_t cmd, int32_t param) override;
