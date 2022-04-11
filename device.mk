@@ -202,9 +202,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # GPS
 LOC_HIDL_VERSION = 4.0
 
-PRODUCT_PACKAGES += \
-    libwpa_client
-
 # GSI
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
