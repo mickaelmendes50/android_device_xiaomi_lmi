@@ -192,6 +192,10 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fingerprintextension@1.0.vendor \
     vendor.xiaomi.hardware.touchfeature@1.0.vendor
 
+# FM
+PRODUCT_PACKAGES += \
+    vendor.qti.hardware.fm@1.0.vendor
+
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
