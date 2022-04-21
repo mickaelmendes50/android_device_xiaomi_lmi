@@ -1,4 +1,4 @@
-# All the unpinned blobs are from extracted from LA.UM.9.12.r1-13300-SMxx50.QSSI12.0
+# All the unpinned blobs are from extracted from LA.UM.9.12.r1-13700.03-SMxx50.QSSI12.0
 # All the pinned blobs from MIUI are extracted from miui_LMIGlobal_V12.5.6.0.RJKMIXM_11.0.zip
 
 # ADSPRPC
@@ -580,10 +580,8 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile3.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml 
 vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml 
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml 
-vendor/etc/cne/andsfCne.xml 
 vendor/etc/cne/mwqem.conf 
 vendor/etc/cne/profileMwqem.xml 
-vendor/etc/cne/SwimConfig.xml 
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml 
 vendor/etc/init/cnd.rc 
 vendor/etc/init/mutualex.rc 
@@ -1028,6 +1026,7 @@ vendor/lib64/vendor.qti.hardware.radio.ims@1.7.so
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so 
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.0.so 
 vendor/lib64/vendor.qti.hardware.radio.lpa@1.1.so 
+vendor/lib64/vendor.qti.hardware.radio.lpa@1.2.so
 vendor/lib64/vendor.qti.hardware.radio.qcrilhook@1.0.so 
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@1.0.so 
 vendor/lib64/vendor.qti.hardware.radio.qtiradio@2.0.so 
