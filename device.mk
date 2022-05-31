@@ -95,7 +95,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.btstack.enable.lpa=true \
-    persist.vendor.btstack.enable.twsplus=true
+    persist.vendor.btstack.enable.twsplus=true \
+    persist.vendor.bt.a2dp.aac_whitelist=false
 
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
