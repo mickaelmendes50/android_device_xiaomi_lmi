@@ -1553,10 +1553,8 @@ vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|a9ce64f68c86725c06c
 vendor/lib64/mediadrm/libwvdrmengine.so|413bad882e2ba29c2344d81773d77a90a7f38af2
 vendor/lib64/libwvhidl.so|bec98d469808c3e0f6324f208166a3db5ed892b3
 
-# WiFi
-vendor/bin/cnss-daemon 
-
-# WiFi Mac - MIUI
+# WiFi - MIUI
+vendor/bin/cnss-daemon|8ab1521554029afd7535d580b3aba69eb3efb206
 vendor/bin/nv_mac|e2f1ef1af56ccee4c630c9c939f1937127940a9f
 
 # WiFi Display
