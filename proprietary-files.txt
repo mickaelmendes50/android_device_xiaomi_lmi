@@ -31,7 +31,6 @@ vendor/lib64/libsysmon_cdsp_skel.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so 
 
 # Adreno - MIUI
-vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk;PRESIGNED|6e85bf1b79c77e90c41863283655d3543d003a63
 vendor/firmware/a615_zap.b00|55c1a14a5699d05f796a982448711159f8208951
 vendor/firmware/a615_zap.b01|ee4cd063e8b2887edc5660b6da7d2efb935b9fa1
 vendor/firmware/a615_zap.b02|4ae54047f9629f2470a5d58f3940c5eb51298b96

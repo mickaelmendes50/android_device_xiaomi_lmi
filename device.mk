@@ -12,10 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Adreno
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.kona.api30
-
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
