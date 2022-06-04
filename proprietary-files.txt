@@ -1,4 +1,4 @@
-# All the unpinned blobs are from extracted from LA.UM.9.12.r1-13700.03-SMxx50.QSSI12.0
+# All the unpinned blobs are from extracted from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
 # All the pinned blobs from MIUI are extracted from miui_LMIGlobal_V12.5.6.0.RJKMIXM_11.0.zip
 
 # ADSPRPC
