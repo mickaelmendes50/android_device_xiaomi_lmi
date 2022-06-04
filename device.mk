@@ -317,6 +317,10 @@ PRODUCT_PACKAGES += \
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
+# Subsystem silent restart
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.ssr.restart_level=ALL_ENABLE
+
 # SOC Properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.soc.manufacturer=QTI \
