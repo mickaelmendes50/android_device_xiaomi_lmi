@@ -31,7 +31,7 @@ vendor/lib64/libsysmon_cdsp_skel.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so 
 
 # Adreno - MIUI
--vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk;PRESIGNED|6e85bf1b79c77e90c41863283655d3543d003a63
+vendor/app/com.qualcomm.qti.gpudrivers.kona.api30/com.qualcomm.qti.gpudrivers.kona.api30.apk;PRESIGNED|6e85bf1b79c77e90c41863283655d3543d003a63
 vendor/firmware/a615_zap.b00|55c1a14a5699d05f796a982448711159f8208951
 vendor/firmware/a615_zap.b01|ee4cd063e8b2887edc5660b6da7d2efb935b9fa1
 vendor/firmware/a615_zap.b02|4ae54047f9629f2470a5d58f3940c5eb51298b96
@@ -550,9 +550,9 @@ media/audio/ui/popup_yingyan_up.ogg|0c3a716ba49dd682a6d58cca04eece0f81ca6834
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|afeca01f1fc2619ddf1aada01d42735ab9efa682
 
 # CNE
--vendor/app/CACertService/CACertService.apk 
--vendor/app/CneApp/CneApp.apk 
--vendor/app/IWlanService/IWlanService.apk 
+vendor/app/CACertService/CACertService.apk 
+vendor/app/CneApp/CneApp.apk 
+vendor/app/IWlanService/IWlanService.apk 
 vendor/bin/cnd 
 vendor/bin/mutualex 
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml 
@@ -632,7 +632,7 @@ vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so 
 
 # Connection Security
--vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk 
+vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk 
 vendor/bin/ssgqmigd 
 vendor/bin/ssgtzd 
 vendor/etc/init/ssgtzd.rc 
@@ -760,7 +760,7 @@ vendor/bin/slim_daemon
 vendor/bin/xtra-daemon 
 vendor/bin/xtwifi-client 
 vendor/bin/xtwifi-inet-agent 
--vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml 
+vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml 
 vendor/etc/apdr.conf 
 vendor/etc/cacert_location.pem 
 vendor/etc/izat.conf 
@@ -807,8 +807,8 @@ vendor/lib64/vendor.qti.gnss@4.0-service.so
 vendor/lib64/vendor.qti.hardware.qccsyshal@1.0.so 
 
 # HotwordEnrollment - MIUI
--product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED|1f9513ba807bced528203f829eb9a8249e915d38
--product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED|b53e90faf861f36c3b71f7f15f54960b1e9d6313
+product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk;PRESIGNED|1f9513ba807bced528203f829eb9a8249e915d38
+product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON.apk;PRESIGNED|b53e90faf861f36c3b71f7f15f54960b1e9d6313
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml|563a58554d9c0dd0608552b644fbf74519a447bb
 system_ext/framework/com.android.hotwordenrollment.common.util.jar|c764b636e0be426a66be09dd08ab9c1921327ef0
 
@@ -912,8 +912,8 @@ vendor/lib64/libopenvx.so
 # Neural Networks
 vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti 
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc 
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml 
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml 
+vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml 
+vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml 
 vendor/lib/rfsa/adsp/libhexagon_nn_skel.so 
 vendor/lib64/libhexagon_nn_stub.so 
 vendor/lib64/unnhal-acc-adreno.so 
@@ -943,7 +943,7 @@ vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so 
 
 # QDMA
--vendor/app/QCC-TR-UI/QCC-TR-UI.apk 
+vendor/app/QCC-TR-UI/QCC-TR-UI.apk 
 vendor/bin/qcc-trd 
 vendor/etc/init/init.qdmastats.rc 
 vendor/lib64/libqdma_file_agent.so 
@@ -1357,7 +1357,7 @@ vendor/etc/init/tloc_daemon.rc
 # Thermal (limits-hal)
 vendor/bin/hw/vendor.qti.hardware.limits@1.0-service 
 vendor/etc/init/vendor.qti.hardware.limits@1.0-service.rc 
--vendor/etc/vintf/manifest/vendor.qti.hardware.limits@1.0-service.xml 
+vendor/etc/vintf/manifest/vendor.qti.hardware.limits@1.0-service.xml 
 vendor/lib64/vendor.qti.hardware.limits@1.0.so 
 
 # Thermal - MIUI
@@ -1383,7 +1383,7 @@ vendor/etc/thermal-tgame.conf|e5e77032eb7cec2efac194a0edb2e2bb27a6790a
 vendor/etc/thermald-devices.conf|12d33ce9c3420572a07419d3317083eafe5b82e8
 
 # Time
--vendor/app/TimeService/TimeService.apk 
+vendor/app/TimeService/TimeService.apk 
 vendor/bin/time_daemon 
 vendor/etc/init/init.time_daemon.rc 
 vendor/lib64/libtime_genoff.so 
@@ -1549,7 +1549,7 @@ vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 # Widevine - MIUI
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine|07b8d21fb76abd377428a6d1b52d6aadfc5892a1
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|a9ce64f68c86725c06c1b1429e90b04ff96ebf60
--vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
+vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml|ebebcf8f367641480cf7d512fc06e6ab777527be
 vendor/lib64/mediadrm/libwvdrmengine.so|413bad882e2ba29c2344d81773d77a90a7f38af2
 vendor/lib64/libwvhidl.so|bec98d469808c3e0f6324f208166a3db5ed892b3
 
