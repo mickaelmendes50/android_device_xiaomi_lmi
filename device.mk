@@ -64,6 +64,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml
 
+# ARCore
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.stock.build.fingerprint=Redmi/lmi/lmi:12/RKQ1.211001.001/V13.0.1.0.SJKMIXM:user/release-keys
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio@2.0-impl \
