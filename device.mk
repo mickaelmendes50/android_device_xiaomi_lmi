@@ -214,10 +214,6 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl-qti \
     android.hardware.health@2.1-service
 
-# Incremental FS
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.incremental.enable=1
-
 # Init
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/init/fstab.qcom:$(TARGET_COPY_OUT_RAMDISK)/fstab.qcom
@@ -276,9 +272,6 @@ TARGET_BOARD_PLATFORM := kona
 PRODUCT_PACKAGES += \
     PopupCameraSettings \
 
-# Project ID Quota
-$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
-
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := all
 
@@ -311,14 +304,20 @@ PRODUCT_PACKAGES += \
 # Shipping API
 PRODUCT_SHIPPING_API_LEVEL := 29
 
-# Subsystem silent restart
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.vendor.ssr.restart_level=ALL_ENABLE
-
 # SOC Properties
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.soc.manufacturer=QTI \
     ro.soc.model=SM8250
+
+# Storage
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.incremental.enable=yes
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
+
+# Subsystem silent restart
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # Thermal
 PRODUCT_PACKAGES += \
