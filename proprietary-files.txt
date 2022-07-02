@@ -89,8 +89,6 @@ vendor/etc/audio_policy_volumes.xml|474fa2c6fcb6ab770efb0d006a42c80acbd7a13a
 vendor/etc/mixer_paths.xml|c0dced9d37a648c1f16c74731a331c35d1301101
 vendor/etc/mixer_paths_overlay_dynamic.xml|dc1a3201101991fe076d7cb6e6dd5d25e256e412
 vendor/etc/mixer_paths_overlay_static.xml|ab3c9a55b8963ff9aa88a09886056ddd6ab71c14
-vendor/etc/sound_trigger_mixer_paths.xml|1bdb3ce33ede73fe6069cda7f30e7dff6cc8a179
-vendor/etc/sound_trigger_platform_info.xml|bbe7996f532baf7cf11e3cd88f0f7451f9b84827
 
 # Audio - MIUI
 vendor/bin/audioflacapp|b8277fa951476e4212380c5d29f8d9732e38eb32
@@ -104,7 +102,6 @@ vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb|0b5fae990bd64510fe30d68c622a93c
 vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp|1c4afcf25d551450b342c3f67e9abd93df184628
 vendor/etc/acdbdata/adsp_avs_config.acdb|bd5453d6fd844ccc4a5160a4cbd7871dcd1aa655
 vendor/lib/hw/audio.primary.kona.so|fdc55ac405693855e2305ca0c48c20aa4fe86f32
-vendor/lib/hw/sound_trigger.primary.kona.so|204ff22590f220f14bf28a0d76f07b97bcc76ffe
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so|ee89b7cb4e0476688ac8c1a669dfe89c660b1a76
 vendor/lib/libAlacSwDec.so|cb41b0945e57b349e6aa476cdac4315ee13a2def
 vendor/lib/libApeSwDec.so|ce425ef9372ed6635e313422b3578f77b90ff526
@@ -160,7 +157,6 @@ vendor/lib/vendor.qti.hardware.audiohalext@1.0.so|ed13a1c435bbc1320ceedeafab62db
 vendor/lib/vendor.qti.voiceprint@1.0.so|5325739853aef4d9b7a752cec9e607e4f7e86ebf
 vendor/lib/vndk/libxlog.so|dad5169deb3296ca1ff4d7e9546e4229cda277b9
 vendor/lib64/hw/audio.primary.kona.so|3af21a623e1c293f82fb1f17adc17e0f21fc06a6
-vendor/lib64/hw/sound_trigger.primary.kona.so|ea551d5ed76917e86a2de57e783fa485944723af
 vendor/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so|0f59ee3a875a9b01610d324bc95a1bc61f51edc0
 vendor/lib64/libAlacSwDec.so|2bd791269f5151fa6b6cfaaa1744f5c0ecb19d28
 vendor/lib64/libApeSwDec.so|efac4ae01cd425577c704d06704b00970d324167
