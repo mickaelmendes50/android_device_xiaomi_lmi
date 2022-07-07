@@ -40,6 +40,7 @@ import android.view.WindowManager;
 import android.widget.Toast;
 
 import co.aospa.popupcamera.R;
+import co.aospa.popupcamera.sensors.SensorsUtils;
 import co.aospa.popupcamera.utils.FileUtils;
 
 import vendor.xiaomi.hardware.motor.V1_0.IMotor;
@@ -118,8 +119,7 @@ public class PopupCameraService extends Service implements Handler.Callback {
         CameraManager cameraManager = getSystemService(CameraManager.class);
         cameraManager.registerAvailabilityCallback(availabilityCallback, null);
         mSensorManager = getSystemService(SensorManager.class);
-        mFreeFallSensor =
-                mSensorManager.getDefaultSensor(Constants.FREE_FALL_SENSOR_ID);
+        mFreeFallSensor = SensorsUtils.getSensor(mSensorManager, "xiaomi.sensor.free_fall");
         mPopupCameraPreferences = new PopupCameraPreferences(this);
         mSoundPool =
                 new SoundPool.Builder()
