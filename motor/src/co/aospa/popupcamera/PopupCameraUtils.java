@@ -19,6 +19,7 @@ package co.aospa.popupcamera;
 import android.content.Context;
 import android.content.Intent;
 import android.os.UserHandle;
+import android.util.Log;
 
 public class PopupCameraUtils {
 
@@ -26,6 +27,7 @@ public class PopupCameraUtils {
     private static final boolean DEBUG = false;
 
     public static void startService(Context context) {
+        if (DEBUG) Log.d(TAG, "Starting service");
         context.startServiceAsUser(new Intent(context, PopupCameraService.class),
                 UserHandle.CURRENT);
     }
