@@ -21,6 +21,7 @@ android_app {
         "androidx.core_core",
         "androidx.preference_preference",
         "//hardware/xiaomi:vendor.xiaomi.hardware.motor-V1.0-java",
+        "SettingsLib",
     ],
 
     optimize: {
