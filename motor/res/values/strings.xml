@@ -21,7 +21,7 @@
      <!-- Popup camera settings -->
     <string name="popup_led_title">Camera LED</string>
     <string name="popup_led_summary">Show LED light when the front camera appears and retracts</string>
-    <string name="popup_title">Front camera sound effects</string>
+    <string name="popup_title">Front camera effects</string>
     <string name="action_none">Disable</string>
     <string name="popup_title_muqin">Xylophone</string>
     <string name="popup_title_yingyan">Condor</string>
@@ -41,4 +41,14 @@
     <string name="stop_operate_camera_frequently">You\'re opening the front camera too frequently.</string>
     <string name="takeback_camera_front_failed">Couldn\'t close front camera. Try again.</string>
     <string name="popup_camera_front_failed">Couldn\'t open front camera. Try again.</string>
+
+    <!-- Popup camera led color -->
+    <string name="popup_led_color_title">LED color</string>
+    <string name="popup_led_color_blue">Blue</string>
+    <string name="popup_led_color_cyan">Cyan</string>
+    <string name="popup_led_color_green">Green</string>
+    <string name="popup_led_color_purple">Purple</string>
+    <string name="popup_led_color_red">Red</string>
+    <string name="popup_led_color_yellow">Yellow</string>
+    <string name="popup_led_color_white">White</string>
 </resources>
