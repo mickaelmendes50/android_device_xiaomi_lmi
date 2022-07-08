@@ -49,6 +49,7 @@ import vendor.xiaomi.hardware.motor.V1_0.IMotorCallback;
 import vendor.xiaomi.hardware.motor.V1_0.MotorEvent;
 
 import java.util.NoSuchElementException;
+import java.util.Random;
 
 public class PopupCameraService extends Service implements Handler.Callback {
 
@@ -318,6 +319,11 @@ public class PopupCameraService extends Service implements Handler.Callback {
     private void lightUp() {
         int ledColor = Integer.parseInt(mPopupCameraPreferences.getLEDColor());
         if (ledColor != -1) {
+            if(ledColor == 0) {
+                Random rand = new Random();
+                int randomNumber = rand.nextInt(7);
+                ledColor = randomNumber + 1;
+            }
             if(ledColor >= 4) {
                 FileUtils.writeLine(Constants.RED_LED_PATH, "1");
                 FileUtils.writeLine(Constants.RED_RIGHT_LED_PATH, "1");

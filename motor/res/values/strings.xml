@@ -44,6 +44,7 @@
 
     <!-- Color effects -->
     <string name="popup_led_color_title">Color effects</string>
+    <string name="popup_led_color_random">Random</string>
     <string name="popup_led_color_blue">Blue</string>
     <string name="popup_led_color_cyan">Cyan</string>
     <string name="popup_led_color_green">Green</string>
