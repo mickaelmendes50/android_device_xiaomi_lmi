@@ -3,12 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:title="@string/popup_title">
 
-    <SwitchPreference
-        android:defaultValue="true"
-        android:key="popup_led_effect"
-        android:summary="@string/popup_led_summary"
-        android:title="@string/popup_led_title" />
-
     <ListPreference
         android:defaultValue="7"
         android:entries="@array/popup_led_color_entries"

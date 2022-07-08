@@ -24,8 +24,6 @@ public class PopupCameraPreferences {
 
     private static final String TAG = "PopupCameraUtils";
     private static final boolean DEBUG = false;
-    private static final String LED_EFFECT_KEY = "popup_led_effect";
-    private static final boolean LED_EFFECT_DEFAULT_VALUE = true;
     private static final String LED_COLOR_KEY = "popup_led_color";
     private static final String LED_COLOR_DEFAULT_VALUE = "7";
     private static final String SOUND_EFFECT_KEY = "popup_sound_effect";
@@ -38,10 +36,6 @@ public class PopupCameraPreferences {
 
     public String getSoundEffect() {
         return mSharedPrefs.getString(SOUND_EFFECT_KEY, SOUND_EFFECT_DEFAULT_VALUE);
-    }
-
-    public boolean isLedAllowed() {
-        return mSharedPrefs.getBoolean(LED_EFFECT_KEY, LED_EFFECT_DEFAULT_VALUE);
     }
 
     public String getLEDColor() {
