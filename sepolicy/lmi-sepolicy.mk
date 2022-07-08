@@ -12,6 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Public Sepolicy
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
+    device/xiaomi/lmi/sepolicy/public/macros
+
 # QCOM Sepolicy
 BOARD_SEPOLICY_DIRS += \
     device/xiaomi/lmi/sepolicy/vendor/qcom
@@ -32,3 +36,4 @@ BOARD_SEPOLICY_DIRS += \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/usb \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/wireless \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/wlan
+
