@@ -19,8 +19,6 @@
     <string name="device_settings_app_name">PopupCameraSettings</string>
 
      <!-- Popup camera settings -->
-    <string name="popup_led_title">Camera LED</string>
-    <string name="popup_led_summary">Show LED light when the front camera appears and retracts</string>
     <string name="popup_title">Front camera effects</string>
     <string name="action_none">Disable</string>
     <string name="popup_title_muqin">Xylophone</string>

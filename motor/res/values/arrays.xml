@@ -53,6 +53,7 @@
 
     <!-- Popup camera led color names -->
     <string-array name="popup_led_color_entries" translatable="false">
+        <item>@string/action_none</item>
         <item>@string/popup_led_color_blue</item>
         <item>@string/popup_led_color_cyan</item>
         <item>@string/popup_led_color_green</item>
@@ -63,6 +64,7 @@
     </string-array>
 
     <string-array name="popup_led_color_values" translatable="false">
+        <item>-1</item>
         <item>1</item>
         <item>3</item>
         <item>2</item>
