@@ -17,18 +17,11 @@
 <resources>    
     <!-- Device specific settings -->
     <string name="device_settings_app_name">PopupCameraSettings</string>
-
-     <!-- Popup camera settings -->
-    <string name="popup_title">Front camera effects</string>
     <string name="action_none">Disable</string>
-    <string name="popup_title_muqin">Xylophone</string>
-    <string name="popup_title_yingyan">Condor</string>
-    <string name="popup_title_mofa">Magic</string>
-    <string name="popup_title_jijia">Mecha</string>
-    <string name="popup_title_chilun">Gearwheel</string>
-    <string name="popup_title_cangmen">Cabin door</string>
+    <string name="popup_title">Popup camera</string>
+    <string name="popup_description">Customize the LED light color and sound effect when the front camera appears and retracts.</string>
 
-    <!-- Motor calibration strings -->
+    <!-- Motor calibration -->
     <string name="popup_camera_tip">Warning</string>
     <string name="popup_camera_takeback_failed_times_calibrate">Couldn\'t close front camera multiple times. Try calibrating the camera.</string>
     <string name="popup_camera_popup_failed_times_calibrate">Couldn\'t open front camera multiple times. Try calibrating the camera.</string>
@@ -40,8 +33,17 @@
     <string name="takeback_camera_front_failed">Couldn\'t close front camera. Try again.</string>
     <string name="popup_camera_front_failed">Couldn\'t open front camera. Try again.</string>
 
-    <!-- Popup camera led color -->
-    <string name="popup_led_color_title">LED color</string>
+    <!-- Sound effects -->
+    <string name="popup_sound_title">Sound effects</string>
+    <string name="popup_title_muqin">Xylophone</string>
+    <string name="popup_title_yingyan">Condor</string>
+    <string name="popup_title_mofa">Magic</string>
+    <string name="popup_title_jijia">Mecha</string>
+    <string name="popup_title_chilun">Gearwheel</string>
+    <string name="popup_title_cangmen">Cabin door</string>
+
+    <!-- Color effects -->
+    <string name="popup_led_color_title">Color effects</string>
     <string name="popup_led_color_blue">Blue</string>
     <string name="popup_led_color_cyan">Cyan</string>
     <string name="popup_led_color_green">Green</string>

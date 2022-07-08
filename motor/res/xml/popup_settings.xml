@@ -17,6 +17,11 @@
         android:entryValues="@array/popupcamera_effects_values"
         android:key="popup_sound_effect"
         android:summary="%s"
-        android:title="@string/popup_title" />
+        android:title="@string/popup_sound_title" />
+
+    <com.android.settingslib.widget.FooterPreference
+        android:key="popup_footer"
+        android:title="@string/popup_description"
+        android:selectable="false" />
 
 </PreferenceScreen>
