@@ -21,7 +21,7 @@ SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += \
 
 # Private Sepolicy
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    device/xiaomi/lmi/sepolicy/private/popupcamera
+    device/xiaomi/lmi/sepolicy/private
 
 # QCOM Sepolicy
 BOARD_SEPOLICY_DIRS += \
