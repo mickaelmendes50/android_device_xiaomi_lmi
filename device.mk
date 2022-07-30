@@ -272,6 +272,14 @@ TARGET_BOARD_PLATFORM := kona
 PRODUCT_PACKAGES += \
     PopupCameraSettings \
 
+# QCRIL
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.radio.cdma_cap=true \
+    persist.vendor.radio.data_con_rprt=1 \
+    persist.vendor.radio.data_ltd_sys_ind=1 \
+    persist.vendor.radio.force_ltd_sys_ind=1 \
+    persist.vendor.radio.manual_nw_rej_ct=1
+
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := all
 
