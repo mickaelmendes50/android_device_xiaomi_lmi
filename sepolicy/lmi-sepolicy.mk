@@ -37,6 +37,7 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/motor \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/power_supply \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/radio \
+    device/xiaomi/lmi/sepolicy/vendor/xiaomi/sensors \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/thermald \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/touch \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/touchfeature \
