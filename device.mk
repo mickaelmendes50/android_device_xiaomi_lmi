@@ -324,6 +324,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    vendor.sys.thermal.data.path=/data/vendor/thermal/
+
 # Vendor Service Manager
 PRODUCT_PACKAGES += \
     vndservicemanager
