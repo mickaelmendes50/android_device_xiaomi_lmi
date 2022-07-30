@@ -151,7 +151,6 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.display.paneltype=2 \
     ro.vendor.display.sensortype=2 \
-    vendor.display.enable_async_powermode=0 \
     vendor.display.qdcm.mode_combine=1 \
     vendor.display.use_layer_ext=0 \
     vendor.display.use_smooth_motion=0
