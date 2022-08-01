@@ -28,6 +28,8 @@
     IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE
 -->
 <resources>
+    <!-- boolean indicating whether the WiFi chipset has 6GHz band support -->
+    <bool translatable="false" name="config_wifi6ghzSupport">true</bool>
 
     <!-- Wifi driver supports IEEE80211AX for softap -->
     <bool translatable="false" name="config_wifiSoftapIeee80211axSupported">true</bool>
