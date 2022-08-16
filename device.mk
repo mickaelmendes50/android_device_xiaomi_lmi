@@ -69,16 +69,6 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.stock.build.fingerprint=Redmi/lmi/lmi:12/RKQ1.211001.001/V13.0.1.0.SJKMIXM:user/release-keys
 
 # Bluetooth
-PRODUCT_PACKAGES += \
-    android.hardware.bluetooth.audio@2.0-impl \
-    audio.bluetooth.default \
-    com.dsi.ant@1.0.vendor \
-    com.qualcomm.qti.bluetooth_audio@1.0.vendor \
-    libbluetooth_audio_session \
-    vendor.qti.hardware.bluetooth_audio@2.1.vendor \
-    vendor.qti.hardware.btconfigstore@1.0.vendor \
-    vendor.qti.hardware.btconfigstore@2.0.vendor
-
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
     persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false \
@@ -188,10 +178,6 @@ PRODUCT_PACKAGES += \
     vendor.goodix.hardware.biometrics.fingerprint@2.1.vendor \
     vendor.xiaomi.hardware.touchfeature@1.0.vendor \
     libudfpshandler
-
-# FM
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.fm@1.0.vendor
 
 # FRP
 PRODUCT_PROPERTY_OVERRIDES += \
