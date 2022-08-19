@@ -32,11 +32,9 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/camera \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/fingerprint \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/ir \
-    device/xiaomi/lmi/sepolicy/vendor/xiaomi/last_kmsg \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/light \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/motor \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/power_supply \
-    device/xiaomi/lmi/sepolicy/vendor/xiaomi/radio \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/sensors \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/thermald \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/touch \
