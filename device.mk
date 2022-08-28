@@ -190,9 +190,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 # GPS
 LOC_HIDL_VERSION = 4.0
 
-# GSI
-$(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
-
 # Gatekeeper
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.gatekeeper.disable_spu=true
