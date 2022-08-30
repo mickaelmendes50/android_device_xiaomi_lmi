@@ -1,4 +1,4 @@
-# Copyright (C) 2021 Paranoid Android
+# Copyright (C) 2021-2022 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -21,7 +21,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.device_id_attestation.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_id_attestation.xml
 
 # Audio
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     aaudio.mmap_policy=1 \
     persist.audio.button_jack.profile=volume \
     persist.audio.button_jack.switch=0 \
@@ -69,7 +69,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.stock.build.fingerprint=Redmi/lmi/lmi:12/RKQ1.211001.001/V13.0.1.0.SJKMIXM:user/release-keys
 
 # Bluetooth
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
     persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false \
     persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2 \
@@ -88,7 +88,7 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.btstack.enable.twsplus=true
 
 # Camera
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     camera.disable_zsl_mode=true
 
 PRODUCT_COPY_FILES += \
@@ -109,7 +109,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.charger.enable_suspend=1
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.cp.fcc_main_ua=400000 \
     persist.vendor.cp.taper_term_mv=7000 \
     persist.vendor.cp.qc3p5_vfloat_offset_uv=110000 \
@@ -137,7 +137,7 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.vendor.use_data_netmgrd=true
 
 # Display
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.display.paneltype=2 \
     ro.vendor.display.sensortype=2 \
     vendor.display.qdcm.mode_combine=1 \
@@ -148,7 +148,7 @@ PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/display/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # DPM
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.dpmhalservice.enable=1
 
 # Doze
@@ -159,7 +159,7 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.sensor.pickup=xiaomi.sensor.pickup
 
 # DRM
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     drm.service.enabled=true
 
 PRODUCT_PACKAGES += \
@@ -180,7 +180,7 @@ PRODUCT_PACKAGES += \
     libudfpshandler
 
 # FRP
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # GPS
@@ -190,7 +190,7 @@ LOC_HIDL_VERSION = 4.0
 $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 
 # Gatekeeper
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     vendor.gatekeeper.disable_spu=true
 
 # Health
@@ -212,7 +212,7 @@ PRODUCT_PACKAGES += \
     ueventd.xiaomi.rc
 
 # Keymaster
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.crypto.allow_encrypt_override=true \
     ro.crypto.dm_default_key.options_format.version=2 \
     ro.crypto.volume.filenames_mode=aes-256-cts \
@@ -229,7 +229,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.motor@1.0.vendor
 
 # Netflix
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.netflix.bsp_rev=Q8250-19134-1
 
 # Namespaces
@@ -258,7 +258,7 @@ PRODUCT_PACKAGES += \
     PopupCameraSettings \
 
 # QCRIL
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.radio.cdma_cap=true \
     persist.vendor.radio.data_con_rprt=1 \
     persist.vendor.radio.data_ltd_sys_ind=1 \
@@ -269,11 +269,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 TARGET_COMMON_QTI_COMPONENTS := all
 
 # Recovery
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.flash.recovery=1
 
 # Sensors
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.sensors.allow_non_default_discovery=true \
     persist.vendor.sensors.sync_request=true
 
@@ -298,26 +298,26 @@ PRODUCT_PACKAGES += \
 PRODUCT_SHIPPING_API_LEVEL := 29
 
 # SOC Properties
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.manufacturer=QTI \
     ro.soc.model=SM8250
 
 # Storage
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.fuse.passthrough.enable=true \
     ro.incremental.enable=yes
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Subsystem silent restart
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.ssr.restart_level=ALL_ENABLE
 
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0-service.qti
 
-PRODUCT_PROPERTY_OVERRIDES += \
+PRODUCT_VENDOR_PROPERTIES += \
     vendor.sys.thermal.data.path=/data/vendor/thermal/
 
 # Vendor Service Manager
