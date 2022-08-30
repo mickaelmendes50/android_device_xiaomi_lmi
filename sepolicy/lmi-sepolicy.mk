@@ -33,6 +33,7 @@ BOARD_VENDOR_SEPOLICY_DIRS += \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/fingerprint \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/ir \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/light \
+    device/xiaomi/lmi/sepolicy/vendor/xiaomi/modem \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/motor \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/power_supply \
     device/xiaomi/lmi/sepolicy/vendor/xiaomi/sensors \
