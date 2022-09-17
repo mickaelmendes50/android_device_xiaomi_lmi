@@ -55,7 +55,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 PRODUCT_ODM_PROPERTIES += \
     aaudio.mmap_policy=1 \
-    persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aptxadaptiver2-aac-ldac-lhdc \
     ro.vendor.audio.sdk.fluencetype=fluence \
     vendor.audio.adm.buffering.ms=6 \
     vendor.audio.feature.dynamic_ecns.enable=false \
