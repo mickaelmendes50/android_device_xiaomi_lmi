@@ -1,4 +1,4 @@
-# All the unpinned blobs are from extracted from LA.UM.9.12.r1-14100.02-SMxx50.QSSI12.0
+# All the unpinned blobs are from extracted from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
 # All the pinned blobs from MIUI are extracted from miui_LMIGlobal_V13.0.3.0.SJKMIXM_12.0
 
 # ADSPRPC
@@ -623,12 +623,12 @@ vendor/etc/charger_fstab.qti
 
 # Config Store
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service 
-vendor/etc/configstore/vpp.configstore.xml 
 vendor/etc/configstore/wigig.xml 
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc 
 vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so 
 
 # Connection Security
+vendor/app/ConnectionSecurityService/ConnectionSecurityService.apk
 vendor/app/TrustZoneAccessService/TrustZoneAccessService.apk 
 vendor/bin/ssgqmigd 
 vendor/bin/ssgtzd 
@@ -782,6 +782,7 @@ vendor/lib64/libizat_client_api.so
 vendor/lib64/libizat_core.so 
 vendor/lib64/liblbs_core.so 
 vendor/lib64/libloc_api_v02.so 
+vendor/lib64/libloc_api_wds.so
 vendor/lib64/libloc_socket.so 
 vendor/lib64/liblocationservice.so 
 vendor/lib64/liblocationservice_glue.so 
@@ -919,8 +920,6 @@ vendor/lib64/unnhal-acc-hvx.so
 
 # PD
 vendor/bin/pd-mapper 
-vendor/lib/libpdmapper.so 
-vendor/lib/libpdnotifier.so 
 vendor/lib64/libpdmapper.so 
 vendor/lib64/libpdnotifier.so 
 
@@ -939,6 +938,12 @@ vendor/lib64/hw/vendor.qti.hardware.qccvndhal@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0-halimpl.so 
 vendor/lib64/vendor.qti.hardware.qccvndhal@1.0.so 
 
+# QCV
+vendor/bin/init.qti.qcv.sh 
+vendor/etc/init/init.qti.qcv.rc 
+vendor/lib64/libsoc_helper.so 
+vendor/lib64/libsoc_helper_jni.so 
+
 # QDMA
 vendor/app/QCC-TR-UI/QCC-TR-UI.apk 
 vendor/bin/qcc-trd 
@@ -954,6 +959,7 @@ vendor/bin/qrtr-ns
 vendor/etc/init/qmipriod.debug.rc 
 vendor/etc/init/qmipriod.rc 
 vendor/etc/seccomp_policy/qti-systemd.policy 
+vendor/etc/qmi_fw.conf
 vendor/lib/libidl.so 
 vendor/lib/libmdmdetect.so 
 vendor/lib/libqcci_legacy.so 
@@ -1053,13 +1059,8 @@ vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/8_version_update_ecc_table.sql 
 vendor/radio/qcril_database/upgrade/9_version_update_ecc_table.sql 
 vendor/radio/qcril_database/upgrade/10_version_update_ecc_table.sql 
+vendor/radio/qcril_database/upgrade/11_version_update_ecc_table.sql
 vendor/radio/qcril_database/qcril.db 
-
-# QCV
-vendor/lib/libsoc_helper.so 
-vendor/lib/libsoc_helper_jni.so 
-vendor/lib64/libsoc_helper.so 
-vendor/lib64/libsoc_helper_jni.so 
 
 # QTEE
 vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service 
@@ -1508,6 +1509,7 @@ vendor/firmware/Vigor_RTP.bin|1e4315664b65a3ce3827fd8454996254035e8650
 
 # VPP
 vendor/bin/vppservice 
+vendor/etc/configstore/vpp.configstore.xml
 vendor/etc/init/vppservice.rc 
 vendor/lib/libOmxVpp.so 
 vendor/lib/libvppclient.so 
