@@ -56,6 +56,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml
 
 # Bluetooth
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio@2.0-impl:32
+
 PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \
     persist.vendor.qcom.bluetooth.a2dp_mcast_test.enabled=false \
