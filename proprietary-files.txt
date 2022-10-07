@@ -1138,7 +1138,6 @@ vendor/etc/init/init.vendor.sensors.rc|8d286f50fd261dc8843c6a208386b535cc07641e
 vendor/etc/init/vendor.qti.hardware.sensorscalibrate@1.0-service.rc|449c88778d880c0d47cc4d651fc60c4c424c1a3f
 vendor/etc/init/vendor.sensors.qti.rc|9a3db138bc4848b720e0839235a3e074259b78c1
 vendor/etc/init/vendor.sensors.sscrpcd.rc|df52901f1ad0fbc97d6070e28896a6be40154814
-vendor/etc/sensors/hals.conf|d4e21ae8af9085ec8cd0a12655ee88ec2b5b2a87
 vendor/lib64/hw/vendor.qti.hardware.sensorscalibrate@1.0-impl.so|c8a5dcbb7a892bffda1a9cc398dd0280a7422371
 vendor/lib64/libnotifyaudiohal.so|c6d53e28c977f92e974b85dfb532734b42d44231
 vendor/lib64/libsensorcal.so|6c7275b7fd887475e3e090284ab56d115ea1ecc1
