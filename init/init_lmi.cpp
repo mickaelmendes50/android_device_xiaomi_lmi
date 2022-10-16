@@ -59,23 +59,12 @@ void load_redmi_k30_pro() {
     property_override("ro.product.name", "lmi");
 }
 
-void load_poco_f2_pro() {
-    property_override("ro.product.brand", "POCO");
-    property_override("ro.product.device", "lmi");
-    property_override("ro.product.manufacturer", "Xiaomi");
-    property_override("ro.product.model", "POCO F2 Pro");
-    property_override("ro.product.name", "lmi");
-}
-
 void vendor_load_properties() {
-    std::string region = GetProperty("ro.boot.hwc", "");
     std::string variant = GetProperty("ro.boot.product.hardware.sku", "");
     if (variant.find("pro") != std::string::npos) {
         load_redmi_k30_pro_zoom_edition();
-    } else if (region.find("CN") != std::string::npos) {
-        load_redmi_k30_pro();
     } else {
-        load_poco_f2_pro();
+        load_redmi_k30_pro();
     }
 
     load_dalvikvm_properties();
