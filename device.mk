@@ -232,6 +232,7 @@ PRODUCT_PACKAGES += \
     AOSPALmiFrameworks \
     AOSPALmiSettings \
     AOSPALmiSystemUI \
+    LmiCarrierConfig \
     LmiFrameworks \
     LmiSystemUI \
     FrameworksResTarget \
