@@ -620,12 +620,6 @@ vendor/lib64/vendor.qti.latency@2.1.so
 # Consumer IR - MIUI
 vendor/lib64/hw/consumerir.default.so|c5c8947ace6c6479914a57ad609a961eebf0b949
 
-# Charger
-vendor/bin/hvdcp_opti 
-vendor/bin/init.qti.chg_policy.sh 
-vendor/etc/init/vendor.qti.hardware.charger_monitor@1.0-service.rc 
-vendor/etc/charger_fstab.qti 
-
 # Config Store
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service 
 vendor/etc/configstore/wigig.xml 

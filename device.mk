@@ -257,7 +257,9 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.radio.manual_nw_rej_ct=1
 
 # QTI
-TARGET_COMMON_QTI_COMPONENTS := all
+TARGET_COMMON_QTI_COMPONENTS := \
+    all \
+    charging
 
 # Recovery
 PRODUCT_VENDOR_PROPERTIES += \
