@@ -260,6 +260,7 @@ PRODUCT_VENDOR_PROPERTIES += \
 TARGET_COMMON_QTI_COMPONENTS := \
     all \
     charging \
+    dsprpcd \
     qseecomd
 
 # Recovery
