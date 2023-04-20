@@ -259,7 +259,8 @@ PRODUCT_VENDOR_PROPERTIES += \
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
     all \
-    charging
+    charging \
+    qseecomd
 
 # Recovery
 PRODUCT_VENDOR_PROPERTIES += \
