@@ -274,6 +274,8 @@ vendor/lib64/libalAILDC.so|3f7421b6a20322e9772adb71ceb1f45e48f48ed7
 vendor/lib64/libalCFR.so
 vendor/lib64/libalhLDC.so|e9e08ea866d7e5f927986886490e3eb528d0c6b9
 vendor/lib64/libalLDC.so|94ecf7486ce9ca4c6c26adcadcc12d64b02ead4c
+vendor/lib64/libarcmulticamsat.so
+vendor/lib64/libarcsat.so
 vendor/lib64/libarcdualcamsat.so|f0a6cf7dc6d13384a26fb6e451bfa5e2d35344a0
 vendor/lib64/libc++_shared.so|8bd494c3b1da5d250e0dc81231ea094fd0bccf88
 vendor/lib64/libcamerapostproc.so|32e22f87c9c81c970d0dc13fee6bef45c554caa0
@@ -291,6 +293,7 @@ vendor/lib64/libcvp2.so|dde388db38b8f3dcf0018b7ed29870418119eb94
 vendor/lib64/libdng_sdk2vendor.so|df7487d013c78b7c6a77ccd9be10fa8e115ed7c8
 vendor/lib64/libdualcam_optical_zoom_control.so|87a0507f8115488666a2a65a6237e80086854d7c
 vendor/lib64/libdualcam_video_optical_zoom.so|646a9075456fef857208520ad007b61fa2a2418d
+vendor/lib64/libflaw.so
 vendor/lib64/libfocus.so|c482e083f1d5e40cf3702d8dd49ccd4f6b5473fa
 vendor/lib64/libft2vendor.so|fd87e8dbbb193d263d60bd352813b686633cba65
 vendor/lib64/libHalSuperSensorServer.so|fdb83a8bf01ad84340951381b1f9481fbfaa95d4
@@ -335,6 +338,7 @@ vendor/lib64/libsns_fastRPC_util.so|74f066bdad58f2c97a6175c30b3eb1a0bd607936
 vendor/lib64/libsns_low_lat_stream_stub.so|1609464e3a9115bf108594420d1abd3f96267d11
 vendor/lib64/libst_soft_isp_calc_exposure_shared.so|c8733cb5ac12f3d11a065e271ece485e63b7da07
 vendor/lib64/libst_soft_isp_shared.so|189de127a19f5b4688544e217e15b8b2b0e39684
+vendor/lib64/libsupermoon.so
 vendor/lib64/libSuperSensor.so|f94bbdafbb47db109b2ccba8ad13d6b17d47ba2e
 vendor/lib64/libSuperSensorCPU.so|083a141a1ae33e418947c232b19c970e4783825d
 vendor/lib64/libswregistrationalgo.so|d201822ab74ba53e3ace2919058341e180c9033a
