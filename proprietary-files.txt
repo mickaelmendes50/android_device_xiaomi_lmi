@@ -271,6 +271,7 @@ vendor/lib64/com.qti.feature2.sr.so|b7fe63e2cb9f8dea26394ad6344906940023d73b
 vendor/lib64/com.qti.feature2.stub.so|58c843a590832ed7d9274c60183c3a50ad4381c7
 vendor/lib64/com.qti.feature2.swmf.so|452bc7729f6ec664f33e75ad22383330e4aa9d95
 vendor/lib64/libalAILDC.so|3f7421b6a20322e9772adb71ceb1f45e48f48ed7
+vendor/lib64/libalCFR.so
 vendor/lib64/libalhLDC.so|e9e08ea866d7e5f927986886490e3eb528d0c6b9
 vendor/lib64/libalLDC.so|94ecf7486ce9ca4c6c26adcadcc12d64b02ead4c
 vendor/lib64/libarcdualcamsat.so|f0a6cf7dc6d13384a26fb6e451bfa5e2d35344a0
@@ -316,6 +317,8 @@ vendor/lib64/libmulticam_image_optical_zoom.so|8db066285906d51b98e196104546199c7
 vendor/lib64/libmulticam_video_optical_zoom.so|4d13a274712f3bea6da7e0926150c154ea2e25eb
 vendor/lib64/libofflinelog.so|cdaca3cb57fb9621abe31d48d355cfc7d45f62cb
 vendor/lib64/libos.so|8079ca803f47140e849aa232ce91f5dcb996db99
+vendor/lib64/libpowercore.so
+vendor/lib64/librelight_only.so
 vendor/lib64/libremosaichvx_stub.so|010097a8581a6f46024d01ea74fe63d9ad7f8900
 vendor/lib64/libremosaiclib.so|dae657b1006b3892c29e6b9cb7e7d0522f562e66
 vendor/lib64/libremosaic_wrapper.so|d276801e647ceca7eca77da64b034e020e9b0b19
