@@ -18,3 +18,9 @@ r_dir_file(hal_camera_default, vendor_sysfs_kgsl)
 
 # Allow camera HAL to read auxiliary camera properties
 get_prop(hal_camera_default, vendor_persist_camera_prop)
+
+#allow hal_camera_default system_data_file: dir { search };
+
+#add_hwservice(hal_camera_default, hal_camerapostproc_xiaomi_hwservice)
+
+set_prop(hal_camera_default, vendor_camera_prop)
