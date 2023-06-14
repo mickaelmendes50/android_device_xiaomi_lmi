@@ -15,6 +15,11 @@
 # AID/fs configs
 PRODUCT_PACKAGES += \
     fs_config_files
+    
+# Inherit Pixel Launcher Extended
+$(call inherit-product, vendor/PixelLauncherExtended/PixelLauncher.mk)
+PIXEL_LAUNCHER_VARIANT := glance12
+ICONS_VARIANT := true
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
@@ -81,6 +86,12 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
 # Camera
 PRODUCT_VENDOR_PROPERTIES += \
     camera.disable_zsl_mode=true
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/etc/textclassifier/actions_suggestions.universal.model:$(TARGET_COPY_OUT_SYSTEM)/etc/textclassifier/actions_suggestions.universal.model \
+    $(LOCAL_PATH)/etc/textclassifier/lang_id.model:$(TARGET_COPY_OUT_SYSTEM)/etc/textclassifier/lang_id.model \
+    $(LOCAL_PATH)/etc/textclassifier/textclassifier.en.model:$(TARGET_COPY_OUT_SYSTEM)/etc/textclassifier/textclassifier.en.model \
+    $(LOCAL_PATH)/etc/textclassifier/textclassifier.universal.model:$(TARGET_COPY_OUT_SYSTEM)/etc/textclassifier/textclassifier.universal.model
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
