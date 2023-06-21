@@ -18,8 +18,14 @@ PRODUCT_PACKAGES += \
     
 # Inherit Pixel Launcher Extended
 $(call inherit-product, vendor/PixelLauncherExtended/PixelLauncher.mk)
-PIXEL_LAUNCHER_VARIANT := glance12
-ICONS_VARIANT := true
+PIXEL_LAUNCHER_VARIANT := glance22
+ENABLE_LOCAL_COLOR_POPUPS := true
+ENABLE_OVERVIEW_SELECTIONS := true
+ENABLE_OVERVIEW_SHARING_TO_PEOPLE := true
+ENABLE_QUICKSTEP_LIVE_TILE := true
+ENABLE_REGION_SAMPLING := true
+ENABLE_SMARTSPACE_DISMISS := true
+QUICK_WALLPAPER_PICKER := true
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
@@ -302,7 +308,7 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_SYSTEM_PROPERTIES += \
     ro.product.mod_device=lmi_global
-    
+
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
     android.hardware.sensors@1.0-service \
