@@ -1,2 +1,5 @@
+# Camera
+vendor.xiaomi.hardware.campostproc::IMiPostProcService       u:object_r:hal_xiaomi_camera_hwservice:s0
+
 # Misys
 vendor.xiaomi.hardware.misys::IMiSys          u:object_r:hal_misys_hwservice:s0

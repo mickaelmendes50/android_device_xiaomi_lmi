@@ -79,8 +79,13 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.vendor.btstack.enable.twsplus=false
 
 # Camera
+$(call inherit-product-if-exists, vendor/xiaomi/camera/miuicamera.mk)
+
 PRODUCT_VENDOR_PROPERTIES += \
     camera.disable_zsl_mode=true
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.product.mod_device=lmi_global
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
@@ -210,9 +215,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 # Lights
 PRODUCT_PACKAGES += \
     android.hardware.light-service.xiaomi
-
-# MiuiCamera
-$(call inherit-product-if-exists, vendor/xiaomi/lmi-miuicamera/products/miuicamera.mk)
 
 # Motor
 PRODUCT_PACKAGES += \

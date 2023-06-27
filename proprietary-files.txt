@@ -827,6 +827,11 @@ vendor/lib/vendor.xiaomi.hardware.misys@4.0.so|b2d38365eb6c7f67823a89fe4c5945499
 vendor/lib/libcheckpid.so|1c2b463bf86e1cea9f9ef09a195130839c259b23
 vendor/lib/liblogwrap_vendor.so|67b165477b754e53e8b1e4ad63669534786e0d9d
 
+# MIUI Camera
+product/etc/device_features/lmi.xml
+product/etc/device_features/lmipro.xml
+system/etc/public.libraries-xiaomi.txt
+
 # MMI
 vendor/bin/hw/vendor.qti.hardware.factory@1.0-service 
 vendor/bin/mmid 
