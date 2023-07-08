@@ -161,13 +161,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.dpmhalservice.enable=1
 
-# Doze
-PRODUCT_PACKAGES += \
-    ParanoidDoze
-
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    ro.sensor.pickup=xiaomi.sensor.pickup
-
 # DRM
 PRODUCT_VENDOR_PROPERTIES += \
     drm.service.enabled=true
@@ -192,9 +185,6 @@ PRODUCT_PACKAGES += \
 # FRP
 PRODUCT_VENDOR_PROPERTIES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
-
-# GPS
-LOC_HIDL_VERSION = 4.0
 
 # Gatekeeper
 PRODUCT_VENDOR_PROPERTIES += \
@@ -310,7 +300,7 @@ PRODUCT_SYSTEM_PROPERTIES += \
     ro.product.mod_device=lmi_global
 
 PRODUCT_PACKAGES += \
-    android.hardware.sensors@1.0-impl \
+    android.hardware.sensors@1.0-impl-xiaomi \
     android.hardware.sensors@1.0-service \
     libsensorndkbridge \
     sensors.udfps
