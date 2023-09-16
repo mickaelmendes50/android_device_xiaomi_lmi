@@ -1,5 +1,5 @@
 # All the unpinned blobs are from extracted from LA.UM.9.12.r1-14400-SMxx50.QSSI12.0
-# All the pinned blobs from MIUI are extracted from miui_LMIGlobal_V13.0.3.0.SJKMIXM_12.0
+# All the pinned blobs from MIUI are extracted from miui_LMIGlobal_V14.0.1.0.SJKMIXM_440715d694_12.0
 
 # ADSPRPC
 vendor/bin/loadalgo 
@@ -22,25 +22,33 @@ vendor/firmware/a630_sqe.fw|09a86618d0c8282bba3ed85774e9841fb3230826
 vendor/firmware/a650_sqe.fw|130a0df5c562e69ab717867ebc0b7abf6f3bcb3f
 vendor/firmware/a650_gmu.bin|c744acb10afb7c980d333c5b6521e2a18993ff14
 vendor/firmware/a650_zap.b00|8c20cfff20d7fe9814581b353c1f58d38636e8c5
-vendor/firmware/a650_zap.b01|df93d2a43f7f642775471648426669a8ccdb3480
+vendor/firmware/a650_zap.b01|09e0fac77bcc7814b153e43e57b8b8daa77ed7ad
 vendor/firmware/a650_zap.b02|270bae014df75a913c6c124155f2cc85706258e6
-vendor/firmware/a650_zap.elf|8273e1b678f7544a0428aefc955234f560092471
-vendor/firmware/a650_zap.mdt|68421c70561d8ab066b3a47ebbd62b5cdadf7575
+vendor/firmware/a650_zap.elf|b8e9dffe3f1cbb9afd0c7c1a8d5a68679f53dab8
+vendor/firmware/a650_zap.mdt|4273de2e2b330a7c1e5a6324a382c45ba37c3cf1
 
 # ADSP modules - MIUI
-vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so|1d83da21aeafa15ff327a59e761099910cfec563
+vendor/lib64/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
+vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so|5e3d26890b77acce2bb4c82017c2bc2a5534c1d5
-vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so|8f338b20fd8c92a601d74d273cdc3e1dfc32807a
-vendor/lib/rfsa/adsp/libSuperSensor_skel.so|4d796f47d7dda6aacbc6506e247e20962374cd66
+vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so|1d83da21aeafa15ff327a59e761099910cfec563
+vendor/lib/rfsa/adsp/hrtf5c.bin|8bf76971487be92028b7908ef519521fe5faeffe
+vendor/lib/rfsa/adsp/libapps_mem_heap.so|738014e904331e99749f36c8f6c0c43b8c246fe6
 vendor/lib/rfsa/adsp/libarcsoft_hdrplus_hvx_skel.so|26b427193c8b3351baee0ef9f23daeb4487e434f
 vendor/lib/rfsa/adsp/libbitml_nsp_skel.so|c56b5c9688d38cc240163d8c8e1144e9ba628fbd
 vendor/lib/rfsa/adsp/libcalculator_domains_skel.so|3f0281e62ef2b36b68c1349d0dc12c8e53b5ee3e
 vendor/lib/rfsa/adsp/libcalculator_skel.so|ae8602bfbf9a08d4b1375d2691c880ca8bded757
 vendor/lib/rfsa/adsp/libcamera_nn_skel.so|9be728826d031e23181aa3003b14f76519f1b22e
+vendor/lib/rfsa/adsp/libcvpdsp_skel.so|510791e46596949591fc283b5153fcf48c19c32c
+vendor/lib/rfsa/adsp/libdspCV_skel.so|88d2805c1e4af680dddc65f1ec6bccb339ef01dc
 vendor/lib/rfsa/adsp/libdsp_streamer_binning.so|00eb6acc7c864371b932f95ff98e98351c6508d8
+vendor/lib/rfsa/adsp/libfastcvadsp.so|0fa5f74f8f1d26c4de0d8dcc6bc5fae25edc07df
+vendor/lib/rfsa/adsp/libfastcvdsp_skel.so|149ec617a575c3fe084e0589b77b897b12c5fe9a
 vendor/lib/rfsa/adsp/libfrc_mobilenet.so|e36e4232f64e0c929fcc1b4940ff1ed4d3f28e9f
+vendor/lib/rfsa/adsp/libhexagon_nn_skel.so|79188b620f3fc48421267990d6dd20d738d6ddd4
 vendor/lib/rfsa/adsp/libmialgo_rfs_cdsp_skel.so|70b13b462577b85a40e1a089d44a5c84830df1fe
 vendor/lib/rfsa/adsp/libmobilenet_dsp.so|d0e909fa841111bd7ee6ac539d5896962b4a7e87
+vendor/lib/rfsa/adsp/libQ6MSFR_manager_skel.so|8f338b20fd8c92a601d74d273cdc3e1dfc32807a
 vendor/lib/rfsa/adsp/libremosaichvx_skel.so|ad260101653de29712e757707d72b93988a49586
 vendor/lib/rfsa/adsp/libscveObjectSegmentation_skel.so|396429c72bae75fcdf40e623d19e83b2c1e4969a
 vendor/lib/rfsa/adsp/libscveT2T_skel.so|649d1645706edf6aa000cbbe64d9a7c6147e9b8d
@@ -50,8 +58,9 @@ vendor/lib/rfsa/adsp/libsnpe_dsp_v65_domains_v2_skel.so|13f18561630bfacc07d165ac
 vendor/lib/rfsa/adsp/libsnpe_dsp_v66_domains_v2_skel.so|be1c95bf8e1cccfcc9ef8c495e756d0f5f91f181
 vendor/lib/rfsa/adsp/libsns_device_mode_skel.so|733a5b8861bb6eb1285bb8982992531c94800997
 vendor/lib/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3cc13a7f769644f
-vendor/lib/rfsa/adsp/misound_karaoke_res.bin|bd7aa75d2f402e08f8d951f80d05c045e292a593
+vendor/lib/rfsa/adsp/libSuperSensor_skel.so|4d796f47d7dda6aacbc6506e247e20962374cd66
 vendor/lib/rfsa/adsp/misound_karaokemix_res.bin|bd7aa75d2f402e08f8d951f80d05c045e292a593
+vendor/lib/rfsa/adsp/misound_karaoke_res.bin|bd7aa75d2f402e08f8d951f80d05c045e292a593
 vendor/lib/rfsa/adsp/misound_res.bin|5b3ac61a35a939a4e7769cbfa39cb85af2cfca85
 
 # Audio (Configs) - MIUI
@@ -71,20 +80,20 @@ vendor/etc/mixer_paths.xml|dbbace1809b0a9e3e0e97a2e9f077101af756196
 vendor/etc/mixer_paths_overlay_dynamic.xml|dc1a3201101991fe076d7cb6e6dd5d25e256e412
 vendor/etc/mixer_paths_overlay_static.xml|ab3c9a55b8963ff9aa88a09886056ddd6ab71c14
 
-# Audio ACDBDATA - MIUI 13.0.1
+# Audio ACDBDATA - MIUI
 vendor/etc/acdbdata/Forte/Forte_Bluetooth_cal.acdb|4737c525129d849c02958c93eca75128dd7c6d2f
 vendor/etc/acdbdata/Forte/Forte_General_cal.acdb|d775ff45660722943a628fb5f234e3acdf98f45b
-vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb|2446cbb3af28ca8f2b1da9c5a1e65c2204bf64f8
+vendor/etc/acdbdata/Forte/Forte_Global_cal.acdb|332da831a3585cdf3b66bc3e525bfe53e3711f7c
 vendor/etc/acdbdata/Forte/Forte_Handset_cal.acdb|ce50c1f15099b39c2fdf2eadb1f16fda35741631
 vendor/etc/acdbdata/Forte/Forte_Hdmi_cal.acdb|2e08dc78525e42111daf1cd6a7789bb9cc6cfd63
-vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb|3b58ae694056419e91825958f2d2d90bc29dc017
+vendor/etc/acdbdata/Forte/Forte_Headset_cal.acdb|307b7e74eaf7e421d47b088c43aace9e990c1fd2
 vendor/etc/acdbdata/Forte/Forte_Speaker_cal.acdb|0b5fae990bd64510fe30d68c622a93c911053d45
-vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp|1c4afcf25d551450b342c3f67e9abd93df184628
+vendor/etc/acdbdata/Forte/Forte_workspaceFile.qwsp|bec8ff6fd080c92828a5fa56ef1ed855a508cb9c
 vendor/etc/acdbdata/adsp_avs_config.acdb|bd5453d6fd844ccc4a5160a4cbd7871dcd1aa655
 
 # Audio - MIUI
 vendor/bin/audioflacapp|b8277fa951476e4212380c5d29f8d9732e38eb32
-vendor/lib/hw/audio.primary.kona.so|066e79a406a2397a96255da6fa632e94d5a8ee6c
+vendor/lib/hw/audio.primary.kona.so|cea14066457464cdc9ae644250477f9db9b5f931
 vendor/lib/hw/sound_trigger.primary.kona.so|a92730e808e5cca4ed289aaff8d2adf0cc2e7906
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so|ee89b7cb4e0476688ac8c1a669dfe89c660b1a76
 vendor/lib/libAlacSwDec.so|cb41b0945e57b349e6aa476cdac4315ee13a2def
@@ -112,6 +121,7 @@ vendor/lib/libacdbrtac.so|27bde7dc2f546ae498d5f7956e21f2ce594c9d03
 vendor/lib/libadiertac.so|ab2fffee27bf0eea612521eaa1c963508c5f76bb
 vendor/lib/libadm.so|1954acdfa454e83054bb7d7656b8f276287f8a22
 vendor/lib/libadpcmdec.so|297d8fecff85b6dc67ff19e788bcf3f1286014a0
+vendor/lib/libalsautils.so|1bd13fc7ddcfe774a71384bcad0321cde0680242
 vendor/lib/libaudcal.so|3fae51a9e47daa9eef52bf061cf00a282c5352ef
 vendor/lib/libaudio_log_utils.so|da677ff82cbec353a2851a7556a2fa37992d6e2c
 vendor/lib/libaudioalsa.so|486cde43c2d135e0cceb862126b56ef0647d3a71
@@ -140,7 +150,7 @@ vendor/lib/libtinycompress.so|b53a73f53c1c5b189c55f4f5f37ecd40dc47b36d
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so|ed13a1c435bbc1320ceedeafab62db39fec2e34d
 vendor/lib/vendor.qti.voiceprint@1.0.so|5325739853aef4d9b7a752cec9e607e4f7e86ebf
 vendor/lib/vndk/libxlog.so|dad5169deb3296ca1ff4d7e9546e4229cda277b9
-vendor/lib64/hw/audio.primary.kona.so|85cf5b54562f07178492e30dfa7d32d36a304980
+vendor/lib64/hw/audio.primary.kona.so|9c81069a92fb98d36d08bc79dd6c3019de8c69ea
 vendor/lib64/hw/sound_trigger.primary.kona.so|2927f0658fb1fc2e296a8c36b1a6c4a5fc4bbf54
 vendor/lib64/hw/vendor.qti.hardware.audiohalext@1.0-impl.so|0f59ee3a875a9b01610d324bc95a1bc61f51edc0
 vendor/lib64/libAlacSwDec.so|2bd791269f5151fa6b6cfaaa1744f5c0ecb19d28
@@ -211,7 +221,7 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/bin/batterysecret|7fc17a38e688aa68b416ebfb230f5cc95bdbf901
 vendor/etc/init/init.batterysecret.rc|9abbe6fd82a0bd5b4499bfe141a5645e76e57606
 
-# Camera - MIUI 14.0.1
+# Camera - MIUI
 vendor/lib64/camera/com.qti.eeprom.lmi_sunny_imx686_gt24p64b.so|ac99ecbf224eec040b8146e1bd293ccb2a879e24
 vendor/lib64/camera/com.qti.eeprom.lmi_sunny_imx686_gt24p64b_st.so|9e403ca03cf400434150589e054dc06a99d6c405
 vendor/lib64/camera/com.qti.eeprom.lmi_sunny_ov08a10_gt24p64.so|88d953941ae9604c9f11f9d918613a9068723761
@@ -356,7 +366,7 @@ vendor/lib64/libvideofilter_only.so|a79f90fd9b3105744790412b72f314f804707fbe
 vendor/lib64/libvidhance.so|769fe96e1e282e22abb658190755fa1acbacf2ec
 vendor/lib64/libxmi_high_dynamic_range.so|82543a63cc4b8770ea335549ec532ab229d909ce
 
-# Camera (arcsoft) - MIUI 14.0.1
+# Camera (arcsoft) - MIUI
 vendor/lib64/libarcsoft_beautyshot.so|1faae34b96337876f94503a1048f4ce408219dec
 vendor/lib64/libarcsoft_bodyslim.so|0aa10f8d7efebc92056b094544f9204078aaec06
 vendor/lib64/libarcsoft_distortion_correction.so|86a6cf76276688aa5b658fd4c9721db84376e355
@@ -373,7 +383,7 @@ vendor/lib64/libarcsoft_preview_deflicker.so|7b68a5764a2be4f3760cd82fe9a349c2eb4
 vendor/lib64/libarcsoft_superportrait.so|ec54a500e4a8de54951c176fefe9759e80bce806
 vendor/lib64/libarcsoft_super_night_raw.so|b0f866a4fb169ea0ab443655dea82466ac6c492f
 
-# Camera (camerax) - MIUI 14.0.1
+# Camera (camerax) - MIUI
 vendor/lib/libcamxexternalformatutils.so|c7c2416d30d5801768fba37a51a4584f001f174b
 vendor/lib/libcamxfacialfeatures.so|05cd39478a63796a43be26862aba1be6660a9050
 vendor/lib/libcamxfdalgo.so|b7b417f1c57521355e8e10b8a127cfd4fabdbec3
@@ -395,7 +405,7 @@ vendor/lib64/libcamxstatscore.so|ba7be5ffbee54639d89bad419faf16dab2708da1
 vendor/lib64/libcamxswprocessalgo.so|7fbc503b6b225bd0f7e271764107ae254c62d586
 vendor/lib64/libcamxtintlessalgo.so|b14b7c9a30d32a45f3592fe638e65124be2d286a
 
-# Camera components - MIUI 14.0.1
+# Camera components - MIUI
 vendor/lib64/camera/components/com.arcsoft.node.deflicker.so|a091f49311e2fe911b296773dd3903d5e62bf8ce
 vendor/lib64/camera/components/com.arcsoft.node.smoothtransition.so|4a3c98a89678bc523da7c1aeb1ef66d59b06ea60
 vendor/lib64/camera/components/com.arcsoft.node.superportrait.so|62f61943dd5cd52cfbbbadcf04dca4a7c6009bb8
@@ -458,7 +468,7 @@ vendor/lib64/camera/components/com.xiaomi.node.tracker.so|9fb6ce372cb666ab637124
 vendor/lib64/camera/components/libdepthmapwrapper.so|73aaf3fbc4e9a864be8572d0754fc045c8c76355
 vendor/lib64/camera/components/libubifocus.so|6b9998f543823fe10ab1becf2c5a86d568a8c9f0
 
-# Camera configs - MIUI 14.0.1
+# Camera configs - MIUI
 vendor/etc/camera/ai_enhance.dlc|a89c006700150fcc7fff69f5712d1617f6fd45d8
 vendor/etc/camera/almalence_sr_params_moon_lmi.config|3c5f402f47ea9c18b72536d5c2cee2046b78185a
 vendor/etc/camera/almalence_sr_params_tele.config|860e0d789de3995fe11b02e4dd5d0735b9e318fe
@@ -501,7 +511,7 @@ vendor/etc/camera/sceneDetection.xml|39b8f86bb9d6598ed9233755e13dacaafc2ff75d
 vendor/etc/camera/seg_quantized.dlc|1c982e1875c29994792ae95031fab93af3661dd8
 vendor/etc/camera/vidhance_calibration|be41cd8f849671e99b0b21c0c786fbc97ad5305a
 
-# Camera firmware - MIUI 14.0.1
+# Camera firmware - MIUI
 vendor/firmware/CAMERA_ICP.elf|01c99ec883dea12ba5c182bfebf081b8f21d1d38
 vendor/firmware/lmi_tele_lc898124_ois.coeff|962e320ea87bbfbdf03747aaad2ebaf96c8d83f4
 vendor/firmware/lmi_tele_lc898124_ois.prog|64f6ec6e36f2e661249ed57eaeada53abf5e654e
@@ -510,7 +520,7 @@ vendor/firmware/lmi_tele_rohm_ois.prog|bb36f887a566dcd016f5a4f2222ea4fd7ddc7e96
 vendor/firmware/lmi_wide_ois_ST.coeff|5fe08af366d841cb823d9349c769aa623bb75273
 vendor/firmware/lmi_wide_ois_ST.prog|433257448273ed9270a4fa3afb95b35428869a29
 
-# Camera motor - MIUI 14.0.1
+# Camera motor - MIUI
 vendor/bin/hw/vendor.xiaomi.hardware.motor@1.0-service|1f29b73035256c7c57a9e0d2ca113222bbbedbaa
 vendor/etc/init/init.lmi.rc|43fd0f183b1e70bf82e98ea0f547dd5196da379b
 vendor/etc/step_motor/mi_camera_config.xml|f0ee340dc67113999da5f863b3f8b25dc891d3af
@@ -520,7 +530,7 @@ vendor/lib64/libmivendor_module_hall.so|876084a3c05222e10f1592e8e696c4d510625232
 vendor/lib64/libmivendor_module_motor.so|552482e308bd23128322cbd08e8e33ee2c3f7007
 vendor/lib64/mi.motor.daemon.so|84bf52958cf3ae0c933c32c1b36e5f88839b9d4e
 
-# Camera motor sound - MIUI 14.0.1
+# Camera motor sound - MIUI
 media/audio/ui/popup_cangmen_down.ogg|573b107889ccf639db5455af21129ce1fee93bc5
 media/audio/ui/popup_cangmen_up.ogg|f152dea254b4eaae403b791c49c60c05ccf12ea7
 media/audio/ui/popup_chilun_down.ogg|e200a3de45abbf2057ca0c6a735b6a6a78ec1b1c
@@ -620,7 +630,6 @@ vendor/bin/ssgtzd
 vendor/etc/init/ssgtzd.rc 
 
 # CVP
-vendor/lib/rfsa/adsp/libcvpdsp_skel.so 
 vendor/lib64/libcvp2.so 
 vendor/lib64/libcvp_common.so 
 vendor/lib64/libcvpcpuRev_skel.so 
@@ -671,17 +680,17 @@ vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 
 # Data (firmware) - MIUI
 vendor/firmware/ipa_fws.b00|5b8bc4a7ef9f033e836854e21532e8eaf5b73e99
-vendor/firmware/ipa_fws.b01|510fee3814990109ee01baaf97f3c9ca5318e76b
+vendor/firmware/ipa_fws.b01|06d8a26e51bef74f57a01e7ae205d7f7bb3829f8
 vendor/firmware/ipa_fws.b02|6954066d6779502d261f647086a2fd1e38bae16f
 vendor/firmware/ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
 vendor/firmware/ipa_fws.b04|e20c91f1c7e833886d443bbf0cb33223e303583b
-vendor/firmware/ipa_fws.elf|5097bae06a9c5dd15d7c6a6497a54481121bfe40
-vendor/firmware/ipa_fws.mdt|0babcf04d387af5bc6f287c75577b377db159535
+vendor/firmware/ipa_fws.elf|7dbd9bfdae5b323fedcb36672cbeb5c26f3eb755
+vendor/firmware/ipa_fws.mdt|4b461b902e051eae5de1b4880803cae9335c5f44
 vendor/firmware/ipa_uc.b00|c469dae927f8645bdc82adf217a20170f3e5bb9f
-vendor/firmware/ipa_uc.b01|6cba54bf2474414bdcb7624ececda805fd592d8b
+vendor/firmware/ipa_uc.b01|d6c2a8092d76f8b7488229bd79c91f468f2ef4ad
 vendor/firmware/ipa_uc.b02|4c7bcc7e9e5285194d271931d31128a6a6660823
-vendor/firmware/ipa_uc.elf|e23d352ffd699f1f5094ee95daf51bc845dbbc0a
-vendor/firmware/ipa_uc.mdt|d8485388f5f90ebd5c1c171904a7132698be23ae
+vendor/firmware/ipa_uc.elf|a364a4ea39f35109a1101d2e911f020b348234bd
+vendor/firmware/ipa_uc.mdt|09b7d8fe797722ad3cfe8972e4c42191ff43dd0b
 
 # Display
 vendor/bin/hw/vendor.display.color@1.0-service 
@@ -701,13 +710,7 @@ vendor/lib64/vendor.display.color@1.2.so
 vendor/lib64/vendor.display.color@1.3.so 
 vendor/lib64/vendor.display.color@1.4.so 
 vendor/lib64/vendor.display.color@1.5.so 
-vendor/lib64/vendor.display.postproc@1.0.so 
-
-# FASTCV
-vendor/lib/rfsa/adsp/libapps_mem_heap.so 
-vendor/lib/rfsa/adsp/libdspCV_skel.so 
-vendor/lib/rfsa/adsp/libfastcvadsp.so 
-vendor/lib/rfsa/adsp/libfastcvdsp_skel.so 
+vendor/lib64/vendor.display.postproc@1.0.so
 
 # Fingerprint - MIUI
 vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so|6d5198a8f7682a49b99e91106e1ade295e435d91
@@ -813,7 +816,6 @@ vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc 
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml 
 vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml 
-vendor/lib/rfsa/adsp/libhexagon_nn_skel.so 
 vendor/lib64/libhexagon_nn_stub.so 
 vendor/lib64/unnhal-acc-adreno.so 
 vendor/lib64/unnhal-acc-common.so 
