@@ -712,6 +712,12 @@ vendor/lib64/vendor.display.color@1.4.so
 vendor/lib64/vendor.display.color@1.5.so 
 vendor/lib64/vendor.display.postproc@1.0.so
 
+# Display-calibration - MIUI
+vendor/etc/ltm_config_xiaomi_j11_38_08_0a_fhd_panel.xml|f04531c2bae0e7404fb05698da568ec6b4b17511
+vendor/etc/mdss_dsi_j11_38_08_0a_fhd_cmd_mi.xml|832bd12c83a3ce40f80372d76bf2464a28f4b6e5
+vendor/etc/qdcm_calib_data_xiaomi_j11_38_08_0a_fhd_panel.xml|ca59ee2fc1cb6c61da6f8be27a9e74da16196315
+vendor/etc/tunings.txt|196b4cc4410dd4c521ace955a225b4c8b47268a4
+
 # Fingerprint - MIUI
 vendor/lib64/hw/fingerprint.goodix_fod.so:vendor/lib64/hw/fingerprint.goodix_fod.default.so|6d5198a8f7682a49b99e91106e1ade295e435d91
 vendor/lib64/hw/fingerprint.goodix_fod6.so:vendor/lib64/hw/fingerprint.goodix_fod6.default.so|be5070ca35545a489554923e9b869307180a1829

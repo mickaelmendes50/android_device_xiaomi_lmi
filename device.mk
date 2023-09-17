@@ -141,9 +141,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_ODM_PROPERTIES += \
     vendor.display.use_smooth_motion=0
 
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/display/,$(TARGET_COPY_OUT_VENDOR)/etc)
-
 # DPM
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.dpmhalservice.enable=1
