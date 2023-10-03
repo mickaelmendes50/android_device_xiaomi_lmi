@@ -128,10 +128,6 @@ PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.vendor.use_data_netmgrd=true
 
 # Display
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/display/display_id_4630946829234430593.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946829234430593.xml \
-    $(LOCAL_PATH)/configs/display/display_id_4630946803141208193.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946803141208193.xml
-        
 PRODUCT_VENDOR_PROPERTIES += \
     ro.vendor.display.paneltype=2 \
     ro.vendor.display.sensortype=2 \
