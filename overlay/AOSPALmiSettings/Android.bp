@@ -15,5 +15,5 @@
 runtime_resource_overlay {
     name: "AOSPALmiSettings",
     sdk_version: "current",
-    system_ext_specific: true,
+    product_specific: true,
 }
