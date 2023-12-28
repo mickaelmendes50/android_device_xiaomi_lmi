@@ -305,10 +305,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.sys.thermal.data.path=/data/vendor/thermal/
 
-# Vendor Service Manager
-PRODUCT_PACKAGES += \
-    vndservicemanager
-
 # Vendor
 $(call inherit-product, vendor/xiaomi/lmi/lmi-vendor.mk)
 
