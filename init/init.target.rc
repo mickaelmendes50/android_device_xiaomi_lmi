@@ -167,3 +167,19 @@ service dcvs-sh /vendor/bin/init.qti.dcvs.sh
 
 on property:vendor.dcvs.prop=1
    start dcvs-sh
+
+on property:vendor.post_boot.parsed=1
+    write /sys/devices/platform/soc/18590000.qcom,devfreq-l3/18590000.qcom,devfreq-l3:qcom,cpu0-cpu-l3-lat/devfreq/18590000.qcom,devfreq-l3:qcom,cpu0-cpu-l3-lat/mem_latency/ratio_ceil 400
+    write /sys/devices/platform/soc/18590000.qcom,devfreq-l3/18590000.qcom,devfreq-l3:qcom,cpu4-cpu-l3-lat/devfreq/18590000.qcom,devfreq-l3:qcom,cpu4-cpu-l3-lat/mem_latency/ratio_ceil 400
+    write /sys/devices/platform/soc/18590000.qcom,devfreq-l3/18590000.qcom,devfreq-l3:qcom,cpu7-cpu-l3-lat/devfreq/18590000.qcom,devfreq-l3:qcom,cpu7-cpu-l3-lat/mem_latency/ratio_ceil 400
+    #Enable mem_latency governor for LLCC and DDR scaling
+    write /sys/devices/platform/soc/soc:qcom,cpu0-cpu-llcc-lat/devfreq/soc:qcom,cpu0-cpu-llcc-lat/mem_latency/ratio_ceil 400
+    write /sys/devices/platform/soc/soc:qcom,cpu4-cpu-llcc-lat/devfreq/soc:qcom,cpu4-cpu-llcc-lat/mem_latency/ratio_ceil 400
+    write /sys/devices/platform/soc/soc:qcom,cpu0-llcc-ddr-lat/devfreq/soc:qcom,cpu0-llcc-ddr-lat/mem_latency/ratio_ceil 400
+    write /sys/devices/platform/soc/soc:qcom,cpu4-llcc-ddr-lat/devfreq/soc:qcom,cpu4-llcc-ddr-lat/mem_latency/ratio_ceil 400
+    #Enable compute governor for gold latfloor
+    write /sys/devices/platform/soc/soc:qcom,cpu4-cpu-ddr-qoslat/devfreq/soc:qcom,cpu4-cpu-ddr-qoslat/mem_latency/ratio_ceil 50
+    #Gold L3 ratio ceil
+    write /sys/devices/platform/soc/18590000.qcom,devfreq-l3/18590000.qcom,devfreq-l3:qcom,cpu4-cpu-l3-lat/devfreq/18590000.qcom,devfreq-l3:qcom,cpu4-cpu-l3-lat/mem_latency/ratio_ceil 4000
+    #Prime L3 ratio ceil
+    write /sys/devices/platform/soc/18590000.qcom,devfreq-l3/18590000.qcom,devfreq-l3:qcom,cpu7-cpu-l3-lat/devfreq/18590000.qcom,devfreq-l3:qcom,cpu7-cpu-l3-lat/mem_latency/ratio_ceil 20000
